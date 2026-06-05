@@ -93,11 +93,23 @@ func getServerSystemCfg() ServerSystemConfig {
 	}
 }
 
+func (b *bootstrapRESTServer) writeErrorResponse(w http.ResponseWriter, err error) {
+	w.WriteHeader(http.StatusForbidden)
+	w.Write([]byte(err.Error()))
+}
+
 // HealthHandler returns success if request is valid
 func (b *bootstrapRESTServer) HealthHandler(w http.ResponseWriter, r *http.Request) {}
 
 func (b *bootstrapRESTServer) VerifyHandler(w http.ResponseWriter, r *http.Request) {
 	ctx := newContext(r, w, "VerifyHandler")
+
+	// CVE-2023-28432: require internode JWT auth before returning cluster config.
+	if err := storageServerRequestValidate(r); err != nil {
+		b.writeErrorResponse(w, err)
+		return
+	}
+
 	cfg := getServerSystemCfg()
 	logger.LogIf(ctx, json.NewEncoder(w).Encode(&cfg))
 	w.(http.Flusher).Flush()
