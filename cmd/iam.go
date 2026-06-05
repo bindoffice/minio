@@ -1973,10 +1973,12 @@ func (sys *IAMSys) IsAllowedServiceAccount(args iampolicy.Args, parent string) b
 
 	// CVE-2024-24747: for embedded policies, admin actions require explicit grant
 	// in the session policy, not inheritance from the parent policy alone.
+	// CVE-2025-62506: session policy must require explicit Allow, not DenyOnly.
+	spArgs := sessionPolicyEvalArgs(parentArgs)
 	if iampolicy.AdminAction(args.Action).IsValid() {
-		return subPolicy.IsAllowed(parentArgs)
+		return subPolicy.IsAllowed(spArgs)
 	}
-	return combinedPolicy.IsAllowed(parentArgs) && subPolicy.IsAllowed(parentArgs)
+	return combinedPolicy.IsAllowed(parentArgs) && subPolicy.IsAllowed(spArgs)
 }
 
 // IsAllowedLDAPSTS - checks for LDAP specific claims and values
@@ -2113,13 +2115,24 @@ func (sys *IAMSys) IsAllowedSTS(args iampolicy.Args, parentUser string) bool {
 			return false
 		}
 
-		// Sub policy is set and valid.
-		return combinedPolicy.IsAllowed(args) && subPolicy.IsAllowed(args)
+		// CVE-2025-62506: session policy must require explicit Allow, not DenyOnly.
+		spArgs := sessionPolicyEvalArgs(args)
+		return combinedPolicy.IsAllowed(args) && subPolicy.IsAllowed(spArgs)
 	}
 
 	// Sub policy not set, this is most common since subPolicy
 	// is optional, use the inherited policies.
 	return combinedPolicy.IsAllowed(args)
+}
+
+// sessionPolicyEvalArgs returns args for evaluating a restrictive session/sub-policy.
+// DenyOnly is for self-service operations on an account; when a session policy is
+// present the action must be explicitly allowed (CVE-2025-62506).
+func sessionPolicyEvalArgs(args iampolicy.Args) iampolicy.Args {
+	spArgs := args
+	spArgs.IsOwner = false
+	spArgs.DenyOnly = false
+	return spArgs
 }
 
 // GetCombinedPolicy returns a combined policy combining all policies

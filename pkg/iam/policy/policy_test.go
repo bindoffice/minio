@@ -1170,3 +1170,31 @@ func TestPolicyValidate(t *testing.T) {
 		}
 	}
 }
+
+// TestPolicyDenyOnlySessionPolicyCVE202562506 - DenyOnly must not be used to
+// evaluate restrictive session policies; otherwise admin actions are allowed
+// without an explicit Allow statement (CVE-2025-62506).
+func TestPolicyDenyOnlySessionPolicyCVE202562506(t *testing.T) {
+	bucketOnlyPolicy := Policy{
+		Version: "2012-10-17",
+		Statements: []Statement{
+			{
+				Effect:    policy.Allow,
+				Actions:   NewActionSet(ListBucketAction),
+				Resources: NewResourceSet(NewResource("arn:aws:s3:::bucket1", "")),
+			},
+		},
+	}
+	args := Args{
+		AccountName: "restricted",
+		Action:      Action(CreateServiceAccountAdminAction),
+		BucketName:  "bucket1",
+	}
+	if bucketOnlyPolicy.IsAllowed(args) {
+		t.Fatal("session policy without admin:CreateServiceAccount must deny")
+	}
+	args.DenyOnly = true
+	if !bucketOnlyPolicy.IsAllowed(args) {
+		t.Fatal("DenyOnly incorrectly bypasses missing Allow; session policy eval must clear DenyOnly")
+	}
+}
