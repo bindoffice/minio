@@ -501,20 +501,23 @@ func (a adminAPIHandlers) AddServiceAccount(w http.ResponseWriter, r *http.Reque
 	)
 
 	targetUser = createReq.TargetUser
+	if targetUser == "" {
+		targetUser = cred.AccessKey
+	}
 
-	// Need permission if we are creating a service acccount
-	// for a user <> to the request sender
-	if targetUser != "" && targetUser != cred.AccessKey {
-		if !globalIAMSys.IsAllowed(iampolicy.Args{
-			AccountName:     cred.AccessKey,
-			Action:          iampolicy.CreateServiceAccountAdminAction,
-			ConditionValues: getConditionValues(r, "", cred.AccessKey, claims),
-			IsOwner:         owner,
-			Claims:          claims,
-		}) {
-			writeErrorResponseJSON(ctx, w, errorCodes.ToAPIErr(ErrAccessDenied), r.URL)
-			return
-		}
+	// CVE-2025-62506: always authorize; DenyOnly for self/parent targets must not
+	// bypass a restrictive session policy (see sessionPolicyEvalArgs in iam.go).
+	denyOnly := targetUser == cred.AccessKey || targetUser == cred.ParentUser
+	if !globalIAMSys.IsAllowed(iampolicy.Args{
+		AccountName:     cred.AccessKey,
+		Action:          iampolicy.CreateServiceAccountAdminAction,
+		ConditionValues: getConditionValues(r, "", cred.AccessKey, claims),
+		IsOwner:         owner,
+		Claims:          claims,
+		DenyOnly:        denyOnly,
+	}) {
+		writeErrorResponseJSON(ctx, w, errorCodes.ToAPIErr(ErrAccessDenied), r.URL)
+		return
 	}
 
 	if globalLDAPConfig.Enabled && targetUser != "" {
