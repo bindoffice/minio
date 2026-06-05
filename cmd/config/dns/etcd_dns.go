@@ -26,9 +26,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/coredns/coredns/plugin/etcd/msg"
 	"github.com/minio/minio-go/v7/pkg/set"
-	"go.etcd.io/etcd/clientv3"
+	clientv3 "go.etcd.io/etcd/client/v3"
 )
 
 // ErrNoEntriesFound - Indicates no entries were found for the given key (directory)
@@ -59,7 +58,7 @@ func (c *CoreDNS) Close() error {
 func (c *CoreDNS) List() (map[string][]SrvRecord, error) {
 	var srvRecords = map[string][]SrvRecord{}
 	for _, domainName := range c.domainNames {
-		key := msg.Path(fmt.Sprintf("%s.", domainName), c.prefixPath)
+		key := etcdPath(fmt.Sprintf("%s.", domainName), c.prefixPath)
 		records, err := c.list(key+etcdPathSeparator, true)
 		if err != nil {
 			return srvRecords, err
@@ -78,7 +77,7 @@ func (c *CoreDNS) List() (map[string][]SrvRecord, error) {
 func (c *CoreDNS) Get(bucket string) ([]SrvRecord, error) {
 	var srvRecords []SrvRecord
 	for _, domainName := range c.domainNames {
-		key := msg.Path(fmt.Sprintf("%s.%s.", bucket, domainName), c.prefixPath)
+		key := etcdPath(fmt.Sprintf("%s.%s.", bucket, domainName), c.prefixPath)
 		records, err := c.list(key, false)
 		if err != nil {
 			return nil, err
@@ -171,7 +170,7 @@ func (c *CoreDNS) Put(bucket string) error {
 			return err
 		}
 		for _, domainName := range c.domainNames {
-			key := msg.Path(fmt.Sprintf("%s.%s", bucket, domainName), c.prefixPath)
+			key := etcdPath(fmt.Sprintf("%s.%s", bucket, domainName), c.prefixPath)
 			key = key + etcdPathSeparator + ip
 			ctx, cancel := context.WithTimeout(context.Background(), defaultContextTimeout)
 			_, err = c.etcdClient.Put(ctx, key, string(bucketMsg))
@@ -190,7 +189,7 @@ func (c *CoreDNS) Put(bucket string) error {
 // Delete - Removes DNS entries added in Put().
 func (c *CoreDNS) Delete(bucket string) error {
 	for _, domainName := range c.domainNames {
-		key := msg.Path(fmt.Sprintf("%s.%s.", bucket, domainName), c.prefixPath)
+		key := etcdPath(fmt.Sprintf("%s.%s.", bucket, domainName), c.prefixPath)
 		ctx, cancel := context.WithTimeout(context.Background(), defaultContextTimeout)
 		_, err := c.etcdClient.Delete(ctx, key+etcdPathSeparator, clientv3.WithPrefix())
 		cancel()
@@ -204,7 +203,7 @@ func (c *CoreDNS) Delete(bucket string) error {
 // DeleteRecord - Removes a specific DNS entry
 func (c *CoreDNS) DeleteRecord(record SrvRecord) error {
 	for _, domainName := range c.domainNames {
-		key := msg.Path(fmt.Sprintf("%s.%s.", record.Key, domainName), c.prefixPath)
+		key := etcdPath(fmt.Sprintf("%s.%s.", record.Key, domainName), c.prefixPath)
 
 		ctx, cancel := context.WithTimeout(context.Background(), defaultContextTimeout)
 		_, err := c.etcdClient.Delete(ctx, key+etcdPathSeparator+record.Host)

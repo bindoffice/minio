@@ -39,7 +39,7 @@ import (
 	"github.com/bindoffice/minio/cmd/config/storageclass"
 	xhttp "github.com/bindoffice/minio/cmd/http"
 	"github.com/bindoffice/minio/pkg/auth"
-	etcd "go.etcd.io/etcd/clientv3"
+	etcd "go.etcd.io/etcd/client/v3"
 
 	"github.com/bindoffice/minio/pkg/certs"
 	"github.com/bindoffice/minio/pkg/event"

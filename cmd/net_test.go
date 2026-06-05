@@ -126,6 +126,20 @@ func TestMustGetLocalIP4(t *testing.T) {
 }
 
 func TestGetHostIP(t *testing.T) {
+	origLookup := lookupIPFunc
+	defer func() { lookupIPFunc = origLookup }()
+
+	lookupIPFunc = func(host string) ([]net.IP, error) {
+		switch host {
+		case "localhost":
+			return []net.IP{net.ParseIP("127.0.0.1")}, nil
+		case "example.org":
+			return []net.IP{net.ParseIP("93.184.216.34")}, nil
+		default:
+			return nil, fmt.Errorf("unexpected host %q in test", host)
+		}
+	}
+
 	testCases := []struct {
 		host           string
 		expectedIPList set.StringSet

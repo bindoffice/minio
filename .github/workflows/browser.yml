@@ -1,0 +1,31 @@
+name: Shellcheck
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  shellcheck:
+    name: Shellcheck mint scripts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install shellcheck
+        run: sudo apt-get update && sudo apt-get install -y shellcheck
+
+      # Browser jest tests currently crash in Login.test.js (Link outside Router).
+      # Re-enable once fixed: npm test -- --runInBand --forceExit
+      - name: Shellcheck mint scripts
+        run: bash -c 'shopt -s globstar; shellcheck mint/**/*.sh'

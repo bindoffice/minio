@@ -1,0 +1,54 @@
+name: Linters and Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Go on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          check-latest: true
+          cache: true
+
+      - name: Build and test (Linux)
+        if: matrix.os == 'ubuntu-latest'
+        env:
+          CGO_ENABLED: 0
+          GO111MODULE: on
+        run: |
+          sudo sysctl net.ipv6.conf.all.disable_ipv6=0
+          sudo sysctl net.ipv6.conf.default.disable_ipv6=0
+          make
+          make test
+          make test-race
+
+      - name: Build and test (Windows)
+        if: matrix.os == 'windows-latest'
+        env:
+          CGO_ENABLED: 0
+          GO111MODULE: on
+        run: |
+          go build -ldflags="-s -w" -o "$env:GOPATH\bin\minio.exe" .
+          go test -v -timeout 50m ./...
