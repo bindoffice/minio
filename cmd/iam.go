@@ -1938,6 +1938,10 @@ func (sys *IAMSys) IsAllowedServiceAccount(args iampolicy.Args, parent string) b
 	}
 
 	if saPolicyClaimStr == "inherited-policy" {
+		// CVE-2024-24747: service accounts must not inherit admin actions from parent.
+		if iampolicy.AdminAction(args.Action).IsValid() {
+			return false
+		}
 		return combinedPolicy.IsAllowed(parentArgs)
 	}
 
@@ -1967,6 +1971,11 @@ func (sys *IAMSys) IsAllowedServiceAccount(args iampolicy.Args, parent string) b
 		return false
 	}
 
+	// CVE-2024-24747: for embedded policies, admin actions require explicit grant
+	// in the session policy, not inheritance from the parent policy alone.
+	if iampolicy.AdminAction(args.Action).IsValid() {
+		return subPolicy.IsAllowed(parentArgs)
+	}
 	return combinedPolicy.IsAllowed(parentArgs) && subPolicy.IsAllowed(parentArgs)
 }
 
