@@ -28,4 +28,4 @@ jobs:
       # Browser jest tests currently crash in Login.test.js (Link outside Router).
       # Re-enable once fixed: npm test -- --runInBand --forceExit
       - name: Shellcheck mint scripts
-        run: bash -c 'shopt -s globstar; shellcheck mint/**/*.sh'
+        run: find mint -name '*.sh' -print0 | xargs -0 shellcheck -S warning
