@@ -377,8 +377,8 @@ func (a adminAPIHandlers) AddUser(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Not allowed to add a user with same access key as root credential
-	if owner && accessKey == cred.AccessKey {
+	// CVE-2023-27589: never allow adding root credential into IAM subsystem.
+	if accessKey == globalActiveCred.AccessKey {
 		writeErrorResponseJSON(ctx, w, errorCodes.ToAPIErr(ErrAddUserInvalidArgument), r.URL)
 		return
 	}

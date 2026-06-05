@@ -1310,6 +1310,11 @@ func (sys *IAMSys) CreateUser(accessKey string, ureq madmin.AddOrUpdateUserReq) 
 		return errServerNotInitialized
 	}
 
+	// CVE-2023-27589: root credential must not be added to IAM subsystem.
+	if accessKey == globalActiveCred.AccessKey {
+		return errIAMActionNotAllowed
+	}
+
 	if sys.usersSysType != MinIOUsersSysType {
 		return errIAMActionNotAllowed
 	}
