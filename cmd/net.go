@@ -89,10 +89,12 @@ func mustGetLocalIP6() (ipList set.StringSet) {
 }
 
 // getHostIP returns IP address of given host.
+var lookupIPFunc = net.LookupIP
+
 func getHostIP(host string) (ipList set.StringSet, err error) {
 	var ips []net.IP
 
-	if ips, err = net.LookupIP(host); err != nil {
+	if ips, err = lookupIPFunc(host); err != nil {
 		return ipList, err
 	}
 

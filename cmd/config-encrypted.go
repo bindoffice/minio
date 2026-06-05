@@ -27,7 +27,7 @@ import (
 	"github.com/bindoffice/minio/cmd/logger"
 	"github.com/bindoffice/minio/pkg/auth"
 	"github.com/bindoffice/minio/pkg/madmin"
-	etcd "go.etcd.io/etcd/clientv3"
+	etcd "go.etcd.io/etcd/client/v3"
 )
 
 func handleEncryptedConfigBackend(objAPI ObjectLayer) error {

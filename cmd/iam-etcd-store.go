@@ -27,14 +27,14 @@ import (
 	"time"
 	"unicode/utf8"
 
-	jwtgo "github.com/dgrijalva/jwt-go"
+	jwtgo "github.com/golang-jwt/jwt/v4"
 	"github.com/minio/minio-go/v7/pkg/set"
 	"github.com/bindoffice/minio/cmd/logger"
 	"github.com/bindoffice/minio/pkg/auth"
 	iampolicy "github.com/bindoffice/minio/pkg/iam/policy"
 	"github.com/bindoffice/minio/pkg/madmin"
-	etcd "go.etcd.io/etcd/clientv3"
-	"go.etcd.io/etcd/mvcc/mvccpb"
+	etcd "go.etcd.io/etcd/client/v3"
+	"go.etcd.io/etcd/api/v3/mvccpb"
 )
 
 var defaultContextTimeout = 30 * time.Second
