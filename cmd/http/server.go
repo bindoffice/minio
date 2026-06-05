@@ -42,6 +42,12 @@ const (
 	// DefaultShutdownTimeout - default shutdown timeout used for graceful http server shutdown.
 	DefaultShutdownTimeout = 5 * time.Second
 
+	// DefaultIdleTimeout closes idle keep-alive connections (CVE-2022-31028).
+	DefaultIdleTimeout = 30 * time.Second
+
+	// DefaultReadHeaderTimeout limits time to read request headers on slow clients (CVE-2022-31028).
+	DefaultReadHeaderTimeout = 30 * time.Second
+
 	// DefaultMaxHeaderBytes - default maximum HTTP header size in bytes.
 	DefaultMaxHeaderBytes = 1 * humanize.MiByte
 )
@@ -185,6 +191,9 @@ func NewServer(addrs []string, handler http.Handler, getCert certs.GetCertificat
 	httpServer.Handler = handler
 	httpServer.TLSConfig = tlsConfig
 	httpServer.MaxHeaderBytes = DefaultMaxHeaderBytes
+	// CVE-2022-31028: close stalled keep-alive connections to avoid goroutine leaks.
+	httpServer.IdleTimeout = DefaultIdleTimeout
+	httpServer.ReadHeaderTimeout = DefaultReadHeaderTimeout
 
 	return httpServer
 }

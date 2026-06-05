@@ -76,5 +76,13 @@ func TestNewServer(t *testing.T) {
 		if server.MaxHeaderBytes != DefaultMaxHeaderBytes {
 			t.Fatalf("Case %v: server.MaxHeaderBytes: expected: %v, got: %v", (i + 1), DefaultMaxHeaderBytes, server.MaxHeaderBytes)
 		}
+
+		if server.IdleTimeout != DefaultIdleTimeout {
+			t.Fatalf("Case %v: server.IdleTimeout: expected: %v, got: %v", (i + 1), DefaultIdleTimeout, server.IdleTimeout)
+		}
+
+		if server.ReadHeaderTimeout != DefaultReadHeaderTimeout {
+			t.Fatalf("Case %v: server.ReadHeaderTimeout: expected: %v, got: %v", (i + 1), DefaultReadHeaderTimeout, server.ReadHeaderTimeout)
+		}
 	}
 }
