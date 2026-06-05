@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	xhttp "github.com/minio/minio/cmd/http"
+	xhttp "github.com/bindoffice/minio/cmd/http"
 )
 
 func TestParseMode(t *testing.T) {

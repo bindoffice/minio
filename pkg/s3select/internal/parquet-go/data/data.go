@@ -17,7 +17,7 @@
 package data
 
 import (
-	"github.com/minio/minio/pkg/s3select/internal/parquet-go/gen-go/parquet"
+	"github.com/bindoffice/minio/pkg/s3select/internal/parquet-go/gen-go/parquet"
 )
 
 // ColumnChunk ...

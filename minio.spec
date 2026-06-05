@@ -1,6 +1,6 @@
 %define         tag     RELEASE.2020-11-25T22-36-25Z
 %define         subver  %(echo %{tag} | sed -e 's/[^0-9]//g')
-# git fetch https://github.com/minio/minio.git refs/tags/RELEASE.2020-11-25T22-36-25Z
+# git fetch https://github.com/bindoffice/minio.git refs/tags/RELEASE.2020-11-25T22-36-25Z
 # git rev-list -n 1 FETCH_HEAD
 %define         commitid        91130e884b5df59d66a45a0aad4f48db88f5ca63
 Summary:        High Performance, Kubernetes Native Object Storage.

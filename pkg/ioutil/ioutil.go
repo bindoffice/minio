@@ -25,7 +25,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/minio/minio/pkg/disk"
+	"github.com/bindoffice/minio/pkg/disk"
 )
 
 // WriteOnCloser implements io.WriteCloser and always

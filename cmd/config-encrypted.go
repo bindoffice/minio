@@ -23,10 +23,10 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/minio/minio/cmd/config"
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/madmin"
+	"github.com/bindoffice/minio/cmd/config"
+	"github.com/bindoffice/minio/cmd/logger"
+	"github.com/bindoffice/minio/pkg/auth"
+	"github.com/bindoffice/minio/pkg/madmin"
 	etcd "go.etcd.io/etcd/clientv3"
 )
 

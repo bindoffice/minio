@@ -27,8 +27,8 @@ import (
 
 	"github.com/nsqio/go-nsq"
 
-	"github.com/minio/minio/pkg/event"
-	xnet "github.com/minio/minio/pkg/net"
+	"github.com/bindoffice/minio/pkg/event"
+	xnet "github.com/bindoffice/minio/pkg/net"
 )
 
 // NSQ constants

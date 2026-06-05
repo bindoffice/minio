@@ -16,7 +16,7 @@
 
 package storageclass
 
-import "github.com/minio/minio/cmd/config"
+import "github.com/bindoffice/minio/cmd/config"
 
 // Help template for storageclass feature.
 var (

@@ -24,11 +24,11 @@ import (
 	"strings"
 
 	humanize "github.com/dustin/go-humanize"
-	"github.com/minio/minio/cmd/config"
-	"github.com/minio/minio/cmd/logger"
-	color "github.com/minio/minio/pkg/color"
-	"github.com/minio/minio/pkg/madmin"
-	xnet "github.com/minio/minio/pkg/net"
+	"github.com/bindoffice/minio/cmd/config"
+	"github.com/bindoffice/minio/cmd/logger"
+	color "github.com/bindoffice/minio/pkg/color"
+	"github.com/bindoffice/minio/pkg/madmin"
+	xnet "github.com/bindoffice/minio/pkg/net"
 )
 
 // Documentation links, these are part of message printing code.

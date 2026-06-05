@@ -21,9 +21,9 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/fips"
-	"github.com/minio/minio/pkg/ioutil"
+	"github.com/bindoffice/minio/cmd/logger"
+	"github.com/bindoffice/minio/pkg/fips"
+	"github.com/bindoffice/minio/pkg/ioutil"
 	"github.com/minio/sio"
 )
 
@@ -35,7 +35,7 @@ const (
 	// InsecureSealAlgorithm is the legacy encryption/sealing algorithm used
 	// to derive & seal the key-encryption-key and to en/decrypt the object data.
 	// This algorithm should not be used for new objects because its key derivation
-	// is not optimal. See: https://github.com/minio/minio/pull/6121
+	// is not optimal. See: https://github.com/bindoffice/minio/pull/6121
 	InsecureSealAlgorithm = "DARE-SHA256"
 )
 

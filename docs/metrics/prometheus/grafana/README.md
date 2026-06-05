@@ -4,13 +4,13 @@
 
 ## Prerequisites
 
-- Prometheus and MinIO configured as explained in [document here](https://github.com/minio/minio/blob/master/docs/metrics/prometheus/README.md).
+- Prometheus and MinIO configured as explained in [document here](https://github.com/bindoffice/minio/blob/master/docs/metrics/prometheus/README.md).
 - Grafana installed as explained [here](https://grafana.com/grafana/download).
 
 ## MinIO Grafana Dashboard
 
 Visualize MinIO metrics with our official Grafana dashboard available on the [Grafana dashboard portal](https://grafana.com/grafana/dashboards/13502).
 
-Refer to the dashboard [json file here](https://raw.githubusercontent.com/minio/minio/master/docs/metrics/prometheus/grafana/minio-overview.json).
+Refer to the dashboard [json file here](https://raw.githubusercontent.com/bindoffice/minio/master/docs/metrics/prometheus/grafana/minio-overview.json).
 
-![Grafana](https://raw.githubusercontent.com/minio/minio/master/docs/metrics/prometheus/grafana/grafana-minio.png)
+![Grafana](https://raw.githubusercontent.com/bindoffice/minio/master/docs/metrics/prometheus/grafana/grafana-minio.png)

@@ -23,7 +23,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/minio/minio/pkg/madmin"
+	"github.com/bindoffice/minio/pkg/madmin"
 )
 
 func main() {
