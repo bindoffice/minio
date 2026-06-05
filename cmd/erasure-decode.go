@@ -23,7 +23,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/minio/minio/cmd/logger"
+	"github.com/bindoffice/minio/cmd/logger"
 )
 
 // Reads in parallel from readers.

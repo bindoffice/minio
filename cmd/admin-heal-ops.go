@@ -25,8 +25,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/madmin"
+	"github.com/bindoffice/minio/cmd/logger"
+	"github.com/bindoffice/minio/pkg/madmin"
 )
 
 // healStatusSummary - overall short summary of a healing sequence

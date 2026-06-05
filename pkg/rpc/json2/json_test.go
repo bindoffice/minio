@@ -18,7 +18,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/minio/minio/pkg/rpc"
+	"github.com/bindoffice/minio/pkg/rpc"
 )
 
 // ResponseRecorder is an implementation of http.ResponseWriter that
@@ -272,6 +272,31 @@ func TestServiceWithErrorMapper(t *testing.T) {
 		t.Errorf("Expected to get an *Error, but got %T: %s", err, err)
 	} else if jsonRpcErr.Code != E_INVALID_REQ {
 		t.Errorf("Expected to get an E_INVALID_REQ error (%d), but got %d", E_INVALID_REQ, jsonRpcErr.Code)
+	}
+}
+
+type MapResponse struct {
+	Values map[string]string `json:"values"`
+}
+
+type ServiceWithMap struct{}
+
+func (s *ServiceWithMap) GetMap(_ *http.Request, _ *Service1Request, res *MapResponse) error {
+	res.Values = map[string]string{"drive": "ok", "mail": "ok"}
+	return nil
+}
+
+func TestWriteResponseWithMapGo125(t *testing.T) {
+	s := rpc.NewServer()
+	s.RegisterCodec(NewCodec(), "application/json")
+	s.RegisterService(new(ServiceWithMap), "")
+
+	var res MapResponse
+	if err := execute(t, s, "ServiceWithMap.GetMap", &Service1Request{}, &res); err != nil {
+		t.Fatalf("encoding response with map failed: %v", err)
+	}
+	if res.Values["drive"] != "ok" || res.Values["mail"] != "ok" {
+		t.Fatalf("unexpected response: %#v", res.Values)
 	}
 }
 

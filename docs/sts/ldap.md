@@ -239,7 +239,7 @@ $ export MINIO_IDENTITY_LDAP_GROUP_SEARCH_BASE_DN='dc=minioad,dc=local;dc=somedo
 $ export MINIO_IDENTITY_LDAP_GROUP_SEARCH_FILTER='(&(objectclass=group)(member=%s))'
 $ minio server ~/test
 ```
-You can make sure it works appropriately using our [example program](https://raw.githubusercontent.com/minio/minio/master/docs/sts/ldap.go):
+You can make sure it works appropriately using our [example program](https://raw.githubusercontent.com/bindoffice/minio/master/docs/sts/ldap.go):
 ```
 $ go run ldap.go -u foouser -p foopassword
 

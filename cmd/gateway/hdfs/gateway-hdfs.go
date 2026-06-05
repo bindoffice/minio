@@ -39,12 +39,12 @@ import (
 	"github.com/jcmturner/gokrb5/v8/keytab"
 	"github.com/minio/cli"
 	"github.com/minio/minio-go/v7/pkg/s3utils"
-	minio "github.com/minio/minio/cmd"
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/env"
-	"github.com/minio/minio/pkg/madmin"
-	xnet "github.com/minio/minio/pkg/net"
+	minio "github.com/bindoffice/minio/cmd"
+	"github.com/bindoffice/minio/cmd/logger"
+	"github.com/bindoffice/minio/pkg/auth"
+	"github.com/bindoffice/minio/pkg/env"
+	"github.com/bindoffice/minio/pkg/madmin"
+	xnet "github.com/bindoffice/minio/pkg/net"
 )
 
 const (

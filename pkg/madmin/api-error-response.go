@@ -55,7 +55,7 @@ func (e ErrorResponse) Error() string {
 }
 
 const (
-	reportIssue = "Please report this issue at https://github.com/minio/minio/issues."
+	reportIssue = "Please report this issue at https://github.com/bindoffice/minio/issues."
 )
 
 // httpRespToErrorResponse returns a new encoded ErrorResponse
@@ -83,7 +83,7 @@ func httpRespToErrorResponse(resp *http.Response) error {
 //
 // For example:
 //
-//   import admin "github.com/minio/minio/pkg/madmin"
+//   import admin "github.com/bindoffice/minio/pkg/madmin"
 //   ...
 //   ...
 //   ss, err := adm.ServiceStatus(...)

@@ -21,8 +21,8 @@ import (
 	"strings"
 	"time"
 
-	xhttp "github.com/minio/minio/cmd/http"
-	"github.com/minio/minio/pkg/handlers"
+	xhttp "github.com/bindoffice/minio/cmd/http"
+	"github.com/bindoffice/minio/pkg/handlers"
 )
 
 // Version - represents the current version of audit log structure.

@@ -23,10 +23,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/minio/minio/cmd/config"
-	"github.com/minio/minio/pkg/ellipses"
-	"github.com/minio/minio/pkg/env"
-	xnet "github.com/minio/minio/pkg/net"
+	"github.com/bindoffice/minio/cmd/config"
+	"github.com/bindoffice/minio/pkg/ellipses"
+	"github.com/bindoffice/minio/pkg/env"
+	xnet "github.com/bindoffice/minio/pkg/net"
 )
 
 // KMSConfig has the KMS config for hashicorp vault

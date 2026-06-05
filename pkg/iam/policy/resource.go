@@ -21,8 +21,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/minio/minio/pkg/bucket/policy/condition"
-	"github.com/minio/minio/pkg/wildcard"
+	"github.com/bindoffice/minio/pkg/bucket/policy/condition"
+	"github.com/bindoffice/minio/pkg/wildcard"
 )
 
 // ResourceARNPrefix - resource ARN prefix as per AWS S3 specification.

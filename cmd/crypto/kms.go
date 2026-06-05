@@ -23,8 +23,8 @@ import (
 	"errors"
 	"io"
 
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/kms"
+	"github.com/bindoffice/minio/cmd/logger"
+	"github.com/bindoffice/minio/pkg/kms"
 	"github.com/minio/sio"
 )
 

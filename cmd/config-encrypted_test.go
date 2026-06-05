@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/madmin"
+	"github.com/bindoffice/minio/pkg/auth"
+	"github.com/bindoffice/minio/pkg/madmin"
 )
 
 func TestDecryptData(t *testing.T) {

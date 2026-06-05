@@ -21,9 +21,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/minio/minio/cmd/config/api"
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/sys"
+	"github.com/bindoffice/minio/cmd/config/api"
+	"github.com/bindoffice/minio/cmd/logger"
+	"github.com/bindoffice/minio/pkg/sys"
 )
 
 type apiConfig struct {

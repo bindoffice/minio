@@ -23,7 +23,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/minio/minio/cmd/logger"
+	"github.com/bindoffice/minio/cmd/logger"
 )
 
 // localMetacacheMgr is the *local* manager for this peer.

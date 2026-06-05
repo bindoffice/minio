@@ -33,13 +33,13 @@ import (
 	"github.com/google/uuid"
 	"github.com/minio/minio-go/v7/pkg/set"
 	"github.com/minio/minio-go/v7/pkg/tags"
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/bpool"
-	"github.com/minio/minio/pkg/console"
-	"github.com/minio/minio/pkg/dsync"
-	"github.com/minio/minio/pkg/env"
-	"github.com/minio/minio/pkg/madmin"
-	"github.com/minio/minio/pkg/sync/errgroup"
+	"github.com/bindoffice/minio/cmd/logger"
+	"github.com/bindoffice/minio/pkg/bpool"
+	"github.com/bindoffice/minio/pkg/console"
+	"github.com/bindoffice/minio/pkg/dsync"
+	"github.com/bindoffice/minio/pkg/env"
+	"github.com/bindoffice/minio/pkg/madmin"
+	"github.com/bindoffice/minio/pkg/sync/errgroup"
 )
 
 // setsDsyncLockers is encapsulated type for Close()

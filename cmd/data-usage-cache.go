@@ -29,10 +29,10 @@ import (
 
 	"github.com/cespare/xxhash/v2"
 	"github.com/klauspost/compress/zstd"
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/bucket/lifecycle"
-	"github.com/minio/minio/pkg/hash"
-	"github.com/minio/minio/pkg/madmin"
+	"github.com/bindoffice/minio/cmd/logger"
+	"github.com/bindoffice/minio/pkg/bucket/lifecycle"
+	"github.com/bindoffice/minio/pkg/hash"
+	"github.com/bindoffice/minio/pkg/madmin"
 	"github.com/tinylib/msgp/msgp"
 )
 

@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/minio/minio/pkg/ellipses"
+	"github.com/bindoffice/minio/pkg/ellipses"
 )
 
 // Tests create endpoints with ellipses and without.

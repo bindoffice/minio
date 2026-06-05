@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/minio/minio/cmd/config"
-	"github.com/minio/minio/pkg/env"
+	"github.com/bindoffice/minio/cmd/config"
+	"github.com/bindoffice/minio/pkg/env"
 )
 
 // Config represents the compression settings.

@@ -24,8 +24,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/madmin"
+	"github.com/bindoffice/minio/pkg/auth"
+	"github.com/bindoffice/minio/pkg/madmin"
 )
 
 func main() {

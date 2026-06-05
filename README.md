@@ -1,7 +1,7 @@
 # MinIO Quickstart Guide
 [![Slack](https://slack.min.io/slack?type=svg)](https://slack.min.io) [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/)
 
-[![MinIO](https://raw.githubusercontent.com/minio/minio/master/.github/logo.svg?sanitize=true)](https://min.io)
+[![MinIO](https://raw.githubusercontent.com/bindoffice/minio/master/.github/logo.svg?sanitize=true)](https://min.io)
 
 MinIO is a High Performance Object Storage released under Apache License v2.0. It is API compatible with Amazon S3 cloud storage service. Use MinIO to build high performance infrastructure for machine learning, analytics and application data workloads.
 
@@ -187,7 +187,7 @@ service minio start
 Use the following commands to compile and run a standalone MinIO server from source. Source installation is only intended for developers and advanced users. If you do not have a working Golang environment, please follow [How to install Golang](https://golang.org/doc/install). Minimum version required is [go1.16](https://golang.org/dl/#stable)
 
 ```sh
-GO111MODULE=on go get github.com/minio/minio
+GO111MODULE=on go get github.com/bindoffice/minio
 ```
 
 The MinIO deployment starts using default root credentials `minioadmin:minioadmin`. You can test the deployment using the MinIO Browser, an embedded
@@ -273,7 +273,7 @@ The above statement is also valid for all gateway backends.
 ## Test using MinIO Browser
 MinIO Server comes with an embedded web based object browser. Point your web browser to http://127.0.0.1:9000 to ensure your server has started successfully.
 
-![Screenshot](https://github.com/minio/minio/blob/master/docs/screenshots/minio-browser.png?raw=true)
+![Screenshot](https://github.com/bindoffice/minio/blob/master/docs/screenshots/minio-browser.png?raw=true)
 
 ## Test using MinIO Client `mc`
 `mc` provides a modern alternative to UNIX commands like ls, cat, cp, mirror, diff etc. It supports filesystems and Amazon S3 compatible cloud storage services. Follow the MinIO Client [Quickstart Guide](https://docs.min.io/docs/minio-client-quickstart-guide) for further instructions.
@@ -306,7 +306,7 @@ mc admin update <minio alias, e.g., myminio>
 - [The MinIO documentation website](https://docs.min.io)
 
 # Contribute to MinIO Project
-Please follow MinIO [Contributor's Guide](https://github.com/minio/minio/blob/master/CONTRIBUTING.md)
+Please follow MinIO [Contributor's Guide](https://github.com/bindoffice/minio/blob/master/CONTRIBUTING.md)
 
 # License
-Use of MinIO is governed by the Apache 2.0 License found at [LICENSE](https://github.com/minio/minio/blob/master/LICENSE).
+Use of MinIO is governed by the Apache 2.0 License found at [LICENSE](https://github.com/bindoffice/minio/blob/master/LICENSE).
