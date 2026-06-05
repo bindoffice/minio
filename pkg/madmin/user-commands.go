@@ -98,6 +98,13 @@ type UserInfo struct {
 	MemberOf   []string      `json:"memberOf,omitempty"`
 }
 
+// AddOrUpdateUserReq is the request body for AddUser admin API.
+// Policy changes are not allowed via this API (CVE-2021-43858).
+type AddOrUpdateUserReq struct {
+	SecretKey string        `json:"secretKey,omitempty"`
+	Status    AccountStatus `json:"status"`
+}
+
 // RemoveUser - remove a user.
 func (adm *AdminClient) RemoveUser(ctx context.Context, accessKey string) error {
 	queryValues := url.Values{}
@@ -199,7 +206,7 @@ func (adm *AdminClient) SetUser(ctx context.Context, accessKey, secretKey string
 		return auth.ErrInvalidSecretKeyLength
 	}
 
-	data, err := json.Marshal(UserInfo{
+	data, err := json.Marshal(AddOrUpdateUserReq{
 		SecretKey: secretKey,
 		Status:    status,
 	})

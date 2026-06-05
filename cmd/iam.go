@@ -1303,9 +1303,9 @@ func (sys *IAMSys) DeleteServiceAccount(ctx context.Context, accessKey string) e
 	return nil
 }
 
-// CreateUser - create new user credentials and policy, if user already exists
-// they shall be rewritten with new inputs.
-func (sys *IAMSys) CreateUser(accessKey string, uinfo madmin.UserInfo) error {
+// CreateUser - create new user credentials, if user already exists
+// they shall be rewritten with new inputs. Policy changes must use SetPolicyForUserOrGroup.
+func (sys *IAMSys) CreateUser(accessKey string, ureq madmin.AddOrUpdateUserReq) error {
 	if !sys.Initialized() {
 		return errServerNotInitialized
 	}
@@ -1324,9 +1324,9 @@ func (sys *IAMSys) CreateUser(accessKey string, uinfo madmin.UserInfo) error {
 
 	u := newUserIdentity(auth.Credentials{
 		AccessKey: accessKey,
-		SecretKey: uinfo.SecretKey,
+		SecretKey: ureq.SecretKey,
 		Status: func() string {
-			if uinfo.Status == madmin.AccountEnabled {
+			if ureq.Status == madmin.AccountEnabled {
 				return auth.AccountOn
 			}
 			return auth.AccountOff
@@ -1338,11 +1338,6 @@ func (sys *IAMSys) CreateUser(accessKey string, uinfo madmin.UserInfo) error {
 	}
 
 	sys.iamUsersMap[accessKey] = u.Credentials
-
-	// Set policy if specified.
-	if uinfo.PolicyName != "" {
-		return sys.policyDBSet(accessKey, uinfo.PolicyName, regularUser, false)
-	}
 	return nil
 }
 
