@@ -17,8 +17,8 @@
 package notify
 
 import (
-	"github.com/bindoffice/bind-store/cmd/config"
-	"github.com/bindoffice/bind-store/pkg/event/target"
+	"github.com/bindoffice/bindstore/cmd/config"
+	"github.com/bindoffice/bindstore/pkg/event/target"
 )
 
 const (

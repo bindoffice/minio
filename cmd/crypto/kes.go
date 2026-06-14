@@ -31,9 +31,9 @@ import (
 	"time"
 
 	jsoniter "github.com/json-iterator/go"
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	"github.com/bindoffice/bind-store/pkg/kms"
-	xnet "github.com/bindoffice/bind-store/pkg/net"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	"github.com/bindoffice/bindstore/pkg/kms"
+	xnet "github.com/bindoffice/bindstore/pkg/net"
 )
 
 var json = jsoniter.ConfigCompatibleWithStandardLibrary

@@ -17,7 +17,7 @@
 package storageclass
 
 import (
-	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bindstore/cmd/config"
 )
 
 // SetStorageClass - One time migration code needed, for migrating from older config to new for StorageClass.

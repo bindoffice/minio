@@ -24,10 +24,10 @@ import (
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 
-	"github.com/bindoffice/bind-store/browser"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	jsonrpc "github.com/bindoffice/bind-store/pkg/rpc"
-	"github.com/bindoffice/bind-store/pkg/rpc/json2"
+	"github.com/bindoffice/bindstore/browser"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	jsonrpc "github.com/bindoffice/bindstore/pkg/rpc"
+	"github.com/bindoffice/bindstore/pkg/rpc/json2"
 )
 
 // webAPI container for Web API.

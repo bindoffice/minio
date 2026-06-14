@@ -21,7 +21,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	xnet "github.com/bindoffice/bind-store/pkg/net"
+	xnet "github.com/bindoffice/bindstore/pkg/net"
 	natsserver "github.com/nats-io/nats-server/v2/test"
 )
 

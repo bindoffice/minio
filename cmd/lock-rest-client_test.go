@@ -20,7 +20,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/dsync"
+	"github.com/bindoffice/bindstore/pkg/dsync"
 )
 
 // Tests lock rpc client.

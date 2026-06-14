@@ -23,10 +23,10 @@ import (
 	"context"
 	"log"
 
-	"github.com/bindoffice/bind-store/pkg/bucket/policy"
-	"github.com/bindoffice/bind-store/pkg/bucket/policy/condition"
-	iampolicy "github.com/bindoffice/bind-store/pkg/iam/policy"
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/bucket/policy"
+	"github.com/bindoffice/bindstore/pkg/bucket/policy/condition"
+	iampolicy "github.com/bindoffice/bindstore/pkg/iam/policy"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 func main() {

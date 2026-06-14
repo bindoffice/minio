@@ -20,8 +20,8 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/bindoffice/bind-store/cmd/config"
-	"github.com/bindoffice/bind-store/pkg/env"
+	"github.com/bindoffice/bindstore/cmd/config"
+	"github.com/bindoffice/bindstore/pkg/env"
 )
 
 // Cache ENVs

@@ -23,7 +23,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/auth"
+	"github.com/bindoffice/bindstore/pkg/auth"
 )
 
 // Test S3 Bucket lifecycle APIs with wrong credentials

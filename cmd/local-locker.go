@@ -22,7 +22,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bindoffice/bind-store/pkg/dsync"
+	"github.com/bindoffice/bindstore/pkg/dsync"
 )
 
 // lockRequesterInfo stores various info from the client for each lock that is requested.

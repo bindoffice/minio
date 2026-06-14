@@ -31,11 +31,11 @@ import (
 	"regexp"
 	"strings"
 
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/auth"
-	"github.com/bindoffice/bind-store/pkg/handlers"
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/auth"
+	"github.com/bindoffice/bindstore/pkg/handlers"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 const (

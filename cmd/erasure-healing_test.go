@@ -27,7 +27,7 @@ import (
 	"time"
 
 	"github.com/dustin/go-humanize"
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 // Tests both object and bucket healing.

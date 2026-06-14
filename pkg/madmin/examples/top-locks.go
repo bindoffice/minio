@@ -24,7 +24,7 @@ import (
 	"encoding/json"
 	"log"
 
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 func main() {

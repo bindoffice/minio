@@ -32,15 +32,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	xjwt "github.com/bindoffice/bind-store/cmd/jwt"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/auth"
-	objectlock "github.com/bindoffice/bind-store/pkg/bucket/object/lock"
-	"github.com/bindoffice/bind-store/pkg/bucket/policy"
-	"github.com/bindoffice/bind-store/pkg/etag"
-	"github.com/bindoffice/bind-store/pkg/hash"
-	iampolicy "github.com/bindoffice/bind-store/pkg/iam/policy"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	xjwt "github.com/bindoffice/bindstore/cmd/jwt"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/auth"
+	objectlock "github.com/bindoffice/bindstore/pkg/bucket/object/lock"
+	"github.com/bindoffice/bindstore/pkg/bucket/policy"
+	"github.com/bindoffice/bindstore/pkg/etag"
+	"github.com/bindoffice/bindstore/pkg/hash"
+	iampolicy "github.com/bindoffice/bindstore/pkg/iam/policy"
 )
 
 // Verify if request has JWT.

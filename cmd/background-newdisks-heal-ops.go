@@ -30,10 +30,10 @@ import (
 
 	"github.com/dustin/go-humanize"
 	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/color"
-	"github.com/bindoffice/bind-store/pkg/console"
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/color"
+	"github.com/bindoffice/bindstore/pkg/console"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 const (

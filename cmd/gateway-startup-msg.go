@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/bindoffice/bind-store/pkg/color"
+	"github.com/bindoffice/bindstore/pkg/color"
 )
 
 // Prints the formatted startup message.

@@ -19,8 +19,8 @@ package iampolicy
 import (
 	"strings"
 
-	"github.com/bindoffice/bind-store/pkg/bucket/policy"
-	"github.com/bindoffice/bind-store/pkg/bucket/policy/condition"
+	"github.com/bindoffice/bindstore/pkg/bucket/policy"
+	"github.com/bindoffice/bindstore/pkg/bucket/policy/condition"
 )
 
 // Statement - iam policy statement.

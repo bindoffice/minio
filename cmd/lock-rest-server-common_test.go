@@ -22,7 +22,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/dsync"
+	"github.com/bindoffice/bindstore/pkg/dsync"
 )
 
 // Helper function to create a lock server for testing

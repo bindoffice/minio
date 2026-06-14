@@ -41,13 +41,13 @@ import (
 	humanize "github.com/dustin/go-humanize"
 	"github.com/minio/cli"
 	miniogopolicy "github.com/minio/minio-go/v7/pkg/policy"
-	minio "github.com/bindoffice/bind-store/cmd"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/auth"
-	"github.com/bindoffice/bind-store/pkg/bucket/policy"
-	"github.com/bindoffice/bind-store/pkg/bucket/policy/condition"
-	"github.com/bindoffice/bind-store/pkg/env"
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	minio "github.com/bindoffice/bindstore/cmd"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/auth"
+	"github.com/bindoffice/bindstore/pkg/bucket/policy"
+	"github.com/bindoffice/bindstore/pkg/bucket/policy/condition"
+	"github.com/bindoffice/bindstore/pkg/env"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 const (
@@ -701,7 +701,7 @@ func (a *azureObjects) ListObjects(ctx context.Context, bucket, prefix, marker, 
 			// or through the AWS Management Console, and are encrypted by SSE-S3
 			// or plaintext, have ETags that are an MD5 digest of their object data.
 			//
-			// Some applications depend on this behavior refer https://github.com/bindoffice/bind-store/issues/6550
+			// Some applications depend on this behavior refer https://github.com/bindoffice/bindstore/issues/6550
 			// So we handle it here and make this consistent.
 			etag := minio.ToS3ETag(string(blob.Properties.Etag))
 			switch {
@@ -857,7 +857,7 @@ func (a *azureObjects) GetObjectInfo(ctx context.Context, bucket, object string,
 	// or through the AWS Management Console, and are encrypted by SSE-S3
 	// or plaintext, have ETags that are an MD5 digest of their object data.
 	//
-	// Some applications depend on this behavior refer https://github.com/bindoffice/bind-store/issues/6550
+	// Some applications depend on this behavior refer https://github.com/bindoffice/bindstore/issues/6550
 	// So we handle it here and make this consistent.
 	etag := minio.ToS3ETag(realETag)
 	metadata := blob.NewMetadata()

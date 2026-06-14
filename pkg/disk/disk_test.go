@@ -23,7 +23,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/disk"
+	"github.com/bindoffice/bindstore/pkg/disk"
 )
 
 func TestFree(t *testing.T) {

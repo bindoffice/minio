@@ -22,9 +22,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bindoffice/bind-store/cmd/config"
-	"github.com/bindoffice/bind-store/pkg/env"
-	xnet "github.com/bindoffice/bind-store/pkg/net"
+	"github.com/bindoffice/bindstore/cmd/config"
+	"github.com/bindoffice/bindstore/pkg/env"
+	xnet "github.com/bindoffice/bindstore/pkg/net"
 	"go.etcd.io/etcd/client/v3"
 	"go.etcd.io/etcd/client/v3/namespace"
 	"go.uber.org/zap"

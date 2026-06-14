@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/ellipses"
+	"github.com/bindoffice/bindstore/pkg/ellipses"
 )
 
 // Tests create endpoints with ellipses and without.

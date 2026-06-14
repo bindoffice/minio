@@ -25,8 +25,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/bindoffice/bind-store/pkg/auth"
-	iampolicy "github.com/bindoffice/bind-store/pkg/iam/policy"
+	"github.com/bindoffice/bindstore/pkg/auth"
+	iampolicy "github.com/bindoffice/bindstore/pkg/iam/policy"
 )
 
 // AccountAccess contains information about

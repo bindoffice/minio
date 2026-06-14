@@ -21,7 +21,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bindstore/cmd/logger"
 )
 
 func TestKeyValueMap(t *testing.T) {

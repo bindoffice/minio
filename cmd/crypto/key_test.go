@@ -21,7 +21,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bindstore/cmd/logger"
 )
 
 var shortRandom = func(limit int64) io.Reader { return io.LimitReader(rand.Reader, limit) }

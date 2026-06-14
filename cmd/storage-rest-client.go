@@ -31,11 +31,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bindoffice/bind-store/cmd/http"
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/cmd/rest"
-	xnet "github.com/bindoffice/bind-store/pkg/net"
+	"github.com/bindoffice/bindstore/cmd/http"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/cmd/rest"
+	xnet "github.com/bindoffice/bindstore/pkg/net"
 	xbufio "github.com/philhofer/fwd"
 	"github.com/tinylib/msgp/msgp"
 )

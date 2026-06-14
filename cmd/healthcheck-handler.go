@@ -21,7 +21,7 @@ import (
 	"net/http"
 	"strconv"
 
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
 )
 
 const unavailable = "offline"

@@ -21,9 +21,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bindoffice/bind-store/cmd/config/api"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/sys"
+	"github.com/bindoffice/bindstore/cmd/config/api"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/sys"
 )
 
 type apiConfig struct {

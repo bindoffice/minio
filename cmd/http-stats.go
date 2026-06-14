@@ -22,7 +22,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bindstore/cmd/logger"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

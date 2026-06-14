@@ -26,7 +26,7 @@ import (
 	"io"
 
 	"github.com/minio/highwayhash"
-	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bindstore/cmd/logger"
 	"golang.org/x/crypto/blake2b"
 )
 

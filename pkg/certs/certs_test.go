@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bindoffice/bind-store/pkg/certs"
+	"github.com/bindoffice/bindstore/pkg/certs"
 )
 
 func updateCerts(crt, key string) {

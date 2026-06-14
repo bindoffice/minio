@@ -8,7 +8,7 @@ ENV GO111MODULE on
 
 RUN  \
      apk add --no-cache git && \
-     git clone https://github.com/bindoffice/bind-store bind-store && cd bind-store && \
+     git clone https://github.com/bindoffice/bindstore bindstore && cd bindstore && \
      git checkout master && go install -v -ldflags "$(go run buildscripts/gen-ldflags.go)"
 
 FROM registry.access.redhat.com/ubi8/ubi-minimal:8.3
@@ -23,10 +23,10 @@ ENV MINIO_ACCESS_KEY_FILE=access_key \
 
 EXPOSE 9000
 
-COPY --from=builder /go/bin/bind-store /usr/bin/bind-store
-COPY --from=builder /go/bind-store/CREDITS /licenses/CREDITS
-COPY --from=builder /go/bind-store/LICENSE /licenses/LICENSE
-COPY --from=builder /go/bind-store/dockerscripts/docker-entrypoint.sh /usr/bin/
+COPY --from=builder /go/bin/bindstore /usr/bin/bindstore
+COPY --from=builder /go/bindstore/CREDITS /licenses/CREDITS
+COPY --from=builder /go/bindstore/LICENSE /licenses/LICENSE
+COPY --from=builder /go/bindstore/dockerscripts/docker-entrypoint.sh /usr/bin/
 
 RUN  \
      microdnf update --nodocs && \
@@ -38,4 +38,4 @@ ENTRYPOINT ["/usr/bin/docker-entrypoint.sh"]
 
 VOLUME ["/data"]
 
-CMD ["bind-store"]
+CMD ["bindstore"]

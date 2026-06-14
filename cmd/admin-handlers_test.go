@@ -29,8 +29,8 @@ import (
 	"testing"
 
 	"github.com/gorilla/mux"
-	"github.com/bindoffice/bind-store/pkg/auth"
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/auth"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 // adminErasureTestBed - encapsulates subsystems that need to be setup for

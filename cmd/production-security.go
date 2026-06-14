@@ -19,11 +19,11 @@ package cmd
 import (
 	"net"
 
-	"github.com/bindoffice/bind-store/cmd/config"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/auth"
-	"github.com/bindoffice/bind-store/pkg/env"
-	xnet "github.com/bindoffice/bind-store/pkg/net"
+	"github.com/bindoffice/bindstore/cmd/config"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/auth"
+	"github.com/bindoffice/bindstore/pkg/env"
+	xnet "github.com/bindoffice/bindstore/pkg/net"
 )
 
 // isWildcardListenAddr reports whether serverAddr listens on every local interface

@@ -19,7 +19,7 @@ package event
 import (
 	"strings"
 
-	"github.com/bindoffice/bind-store/pkg/wildcard"
+	"github.com/bindoffice/bindstore/pkg/wildcard"
 )
 
 // NewPattern - create new pattern for prefix/suffix.

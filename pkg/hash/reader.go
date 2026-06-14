@@ -24,7 +24,7 @@ import (
 	"hash"
 	"io"
 
-	"github.com/bindoffice/bind-store/pkg/etag"
+	"github.com/bindoffice/bindstore/pkg/etag"
 )
 
 // A Reader wraps an io.Reader and computes the MD5 checksum

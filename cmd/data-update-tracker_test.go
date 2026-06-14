@@ -28,8 +28,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/cmd/logger/message/log"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/cmd/logger/message/log"
 )
 
 type testLoggerI interface {

@@ -24,8 +24,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/lock"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/lock"
 )
 
 // Removes only the file at given path does not remove
@@ -339,7 +339,7 @@ func fsFAllocate(fd int, offset int64, len int64) (err error) {
 			// Ignore errors when Fallocate is not supported in the current system
 		case isSysErrInvalidArg(e):
 			// Workaround for Windows Docker Engine 19.03.8.
-			// See https://github.com/bindoffice/bind-store/issues/9726
+			// See https://github.com/bindoffice/bindstore/issues/9726
 		case isSysErrIO(e):
 			err = e
 		default:

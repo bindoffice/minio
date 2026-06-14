@@ -25,10 +25,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/bucket/lifecycle"
-	"github.com/bindoffice/bind-store/pkg/madmin"
-	"github.com/bindoffice/bind-store/pkg/sync/errgroup"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/bucket/lifecycle"
+	"github.com/bindoffice/bindstore/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/sync/errgroup"
 )
 
 // Heals a bucket if it doesn't exist on one of the disks, additionally

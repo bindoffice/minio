@@ -25,8 +25,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/bindoffice/bind-store/pkg/madmin"
-	"github.com/bindoffice/bind-store/pkg/smart"
+	"github.com/bindoffice/bindstore/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/smart"
 	diskhw "github.com/shirou/gopsutil/v3/disk"
 	"github.com/shirou/gopsutil/v3/host"
 )

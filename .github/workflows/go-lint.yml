@@ -55,5 +55,5 @@ jobs:
           CGO_ENABLED: 0
           GO111MODULE: on
         run: |
-          go build -ldflags="-s -w" -o "$env:GOPATH\bin\bind-store.exe" .
+          go build -ldflags="-s -w" -o "$env:GOPATH\bin\bindstore.exe" .
           go test -v -timeout 50m ./...

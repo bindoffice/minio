@@ -27,9 +27,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/auth"
-	"github.com/bindoffice/bind-store/pkg/bucket/policy"
-	"github.com/bindoffice/bind-store/pkg/bucket/policy/condition"
+	"github.com/bindoffice/bindstore/pkg/auth"
+	"github.com/bindoffice/bindstore/pkg/bucket/policy"
+	"github.com/bindoffice/bindstore/pkg/bucket/policy/condition"
 )
 
 func getAnonReadOnlyBucketPolicy(bucketName string) *policy.Policy {

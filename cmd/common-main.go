@@ -36,14 +36,14 @@ import (
 	dns2 "github.com/miekg/dns"
 	"github.com/minio/cli"
 	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/bindoffice/bind-store/cmd/config"
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/auth"
-	"github.com/bindoffice/bind-store/pkg/certs"
-	"github.com/bindoffice/bind-store/pkg/console"
-	"github.com/bindoffice/bind-store/pkg/env"
-	"github.com/bindoffice/bind-store/pkg/handlers"
+	"github.com/bindoffice/bindstore/cmd/config"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/auth"
+	"github.com/bindoffice/bindstore/pkg/certs"
+	"github.com/bindoffice/bindstore/pkg/console"
+	"github.com/bindoffice/bindstore/pkg/env"
+	"github.com/bindoffice/bindstore/pkg/handlers"
 )
 
 // serverDebugLog will enable debug printing
@@ -244,7 +244,7 @@ func handleCommonEnvVars() {
 		logger.Fatal(config.ErrInvalidWormValue(err), "Invalid worm configuration")
 	}
 	if wormEnabled {
-		logger.Fatal(errors.New("WORM is deprecated"), "global MINIO_WORM support is removed, please downgrade your server or migrate to https://github.com/bindoffice/bind-store/tree/master/docs/retention")
+		logger.Fatal(errors.New("WORM is deprecated"), "global MINIO_WORM support is removed, please downgrade your server or migrate to https://github.com/bindoffice/bindstore/tree/master/docs/retention")
 	}
 
 	globalBrowserEnabled, err = config.ParseBool(env.Get(config.EnvBrowser, config.EnableOn))

@@ -29,10 +29,10 @@ import (
 
 	"github.com/cespare/xxhash/v2"
 	"github.com/klauspost/compress/zstd"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/bucket/lifecycle"
-	"github.com/bindoffice/bind-store/pkg/hash"
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/bucket/lifecycle"
+	"github.com/bindoffice/bindstore/pkg/hash"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 	"github.com/tinylib/msgp/msgp"
 )
 

@@ -29,10 +29,10 @@ import (
 
 	jwtgo "github.com/golang-jwt/jwt/v4"
 	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/auth"
-	iampolicy "github.com/bindoffice/bind-store/pkg/iam/policy"
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/auth"
+	iampolicy "github.com/bindoffice/bindstore/pkg/iam/policy"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 	etcd "go.etcd.io/etcd/client/v3"
 	"go.etcd.io/etcd/api/v3/mvccpb"
 )

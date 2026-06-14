@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/auth"
+	"github.com/bindoffice/bindstore/pkg/auth"
 )
 
 // Wrapper for calling RemoveBucket HTTP handler tests for both Erasure multiple disks and single node setup.

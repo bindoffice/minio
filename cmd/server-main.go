@@ -31,16 +31,16 @@ import (
 	"time"
 
 	"github.com/minio/cli"
-	"github.com/bindoffice/bind-store/cmd/config"
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/cmd/rest"
-	"github.com/bindoffice/bind-store/pkg/bucket/bandwidth"
-	"github.com/bindoffice/bind-store/pkg/certs"
-	"github.com/bindoffice/bind-store/pkg/env"
-	"github.com/bindoffice/bind-store/pkg/fips"
-	"github.com/bindoffice/bind-store/pkg/madmin"
-	"github.com/bindoffice/bind-store/pkg/sync/errgroup"
+	"github.com/bindoffice/bindstore/cmd/config"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/cmd/rest"
+	"github.com/bindoffice/bindstore/pkg/bucket/bandwidth"
+	"github.com/bindoffice/bindstore/pkg/certs"
+	"github.com/bindoffice/bindstore/pkg/env"
+	"github.com/bindoffice/bindstore/pkg/fips"
+	"github.com/bindoffice/bindstore/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/sync/errgroup"
 )
 
 // ServerFlags - server command specific flags

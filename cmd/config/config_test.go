@@ -20,7 +20,7 @@ package config
 import (
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 func TestKVFields(t *testing.T) {

@@ -20,7 +20,7 @@ ENV MINIO_ACCESS_KEY_FILE=access_key \
     MINIO_SSE_MASTER_KEY_FILE=sse_master_key \
     MINIO_UPDATE_MINISIGN_PUBKEY="RWTx5Zr1tiHQLwG9keckT0c45M3AGeHD6IvimQHpyRywVWGbP1aVSGav"
 
-COPY dockerscripts/verify-bind-store.sh /usr/bin/verify-bind-store.sh
+COPY dockerscripts/verify-bindstore.sh /usr/bin/verify-bindstore.sh
 COPY dockerscripts/docker-entrypoint.sh /usr/bin/docker-entrypoint.sh
 COPY CREDITS /licenses/CREDITS
 COPY LICENSE /licenses/LICENSE
@@ -30,14 +30,14 @@ RUN \
      microdnf install curl ca-certificates shadow-utils util-linux --nodocs && \
      rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm && \
      microdnf install minisign --nodocs && \
-     curl -s -q https://dl.min.io/server/minio/release/linux-${TARGETARCH}/archive/minio.${RELEASE} -o /usr/bin/bind-store && \
-     curl -s -q https://dl.min.io/server/minio/release/linux-${TARGETARCH}/archive/minio.${RELEASE}.sha256sum -o /usr/bin/bind-store.sha256sum && \
-     curl -s -q https://dl.min.io/server/minio/release/linux-${TARGETARCH}/archive/minio.${RELEASE}.minisig -o /usr/bin/bind-store.minisig && \
+     curl -s -q https://dl.min.io/server/minio/release/linux-${TARGETARCH}/archive/minio.${RELEASE} -o /usr/bin/bindstore && \
+     curl -s -q https://dl.min.io/server/minio/release/linux-${TARGETARCH}/archive/minio.${RELEASE}.sha256sum -o /usr/bin/bindstore.sha256sum && \
+     curl -s -q https://dl.min.io/server/minio/release/linux-${TARGETARCH}/archive/minio.${RELEASE}.minisig -o /usr/bin/bindstore.minisig && \
      microdnf clean all && \
-     chmod +x /usr/bin/bind-store && \
+     chmod +x /usr/bin/bindstore && \
      chmod +x /usr/bin/docker-entrypoint.sh && \
-     chmod +x /usr/bin/verify-bind-store.sh && \
-     /usr/bin/verify-bind-store.sh
+     chmod +x /usr/bin/verify-bindstore.sh && \
+     /usr/bin/verify-bindstore.sh
 
 EXPOSE 9000
 
@@ -45,4 +45,4 @@ ENTRYPOINT ["/usr/bin/docker-entrypoint.sh"]
 
 VOLUME ["/data"]
 
-CMD ["bind-store"]
+CMD ["bindstore"]

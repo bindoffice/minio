@@ -29,7 +29,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bindoffice/bind-store/cmd/crypto"
+	"github.com/bindoffice/bindstore/cmd/crypto"
 )
 
 // CacheStatusType - whether the request was served from cache.

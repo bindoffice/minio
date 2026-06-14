@@ -20,7 +20,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/bindoffice/bind-store/pkg/lock"
+	"github.com/bindoffice/bindstore/pkg/lock"
 )
 
 // AppendFile - appends the file "src" to the file "dst"

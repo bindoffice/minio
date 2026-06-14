@@ -30,10 +30,10 @@ import (
 
 	humanize "github.com/dustin/go-humanize"
 	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/auth"
-	iampolicy "github.com/bindoffice/bind-store/pkg/iam/policy"
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/auth"
+	iampolicy "github.com/bindoffice/bindstore/pkg/iam/policy"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 // UsersSysType - defines the type of users and groups system that is
@@ -503,7 +503,7 @@ func (sys *IAMSys) Load(ctx context.Context, store IAMStorageAPI) error {
 	}
 
 	// Merge the new reloaded entries into global map.
-	// See issue https://github.com/bindoffice/bind-store/issues/9651
+	// See issue https://github.com/bindoffice/bindstore/issues/9651
 	// where the present list of entries on disk are not yet
 	// latest, there is a small window where this can make
 	// valid users invalid.

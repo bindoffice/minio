@@ -20,7 +20,7 @@ import (
 	"strings"
 
 	"github.com/minio/minio-go/v7/pkg/s3utils"
-	minio "github.com/bindoffice/bind-store/cmd"
+	minio "github.com/bindoffice/bindstore/cmd"
 )
 
 const (

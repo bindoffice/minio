@@ -25,10 +25,10 @@ import (
 	"sort"
 	"time"
 
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/bucket/replication"
-	"github.com/bindoffice/bind-store/pkg/sync/errgroup"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/bucket/replication"
+	"github.com/bindoffice/bindstore/pkg/sync/errgroup"
 )
 
 const erasureAlgorithm = "rs-vandermonde"

@@ -15,7 +15,7 @@
 package crypto
 
 import (
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
 )
 
 const (

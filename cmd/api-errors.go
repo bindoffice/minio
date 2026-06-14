@@ -29,18 +29,18 @@ import (
 
 	minio "github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/tags"
-	"github.com/bindoffice/bind-store/cmd/config/dns"
-	"github.com/bindoffice/bind-store/cmd/crypto"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/auth"
-	"github.com/bindoffice/bind-store/pkg/bucket/lifecycle"
-	"github.com/bindoffice/bind-store/pkg/bucket/replication"
+	"github.com/bindoffice/bindstore/cmd/config/dns"
+	"github.com/bindoffice/bindstore/cmd/crypto"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/auth"
+	"github.com/bindoffice/bindstore/pkg/bucket/lifecycle"
+	"github.com/bindoffice/bindstore/pkg/bucket/replication"
 
-	objectlock "github.com/bindoffice/bind-store/pkg/bucket/object/lock"
-	"github.com/bindoffice/bind-store/pkg/bucket/policy"
-	"github.com/bindoffice/bind-store/pkg/bucket/versioning"
-	"github.com/bindoffice/bind-store/pkg/event"
-	"github.com/bindoffice/bind-store/pkg/hash"
+	objectlock "github.com/bindoffice/bindstore/pkg/bucket/object/lock"
+	"github.com/bindoffice/bindstore/pkg/bucket/policy"
+	"github.com/bindoffice/bindstore/pkg/bucket/versioning"
+	"github.com/bindoffice/bindstore/pkg/event"
+	"github.com/bindoffice/bindstore/pkg/hash"
 )
 
 // APIError structure
@@ -245,7 +245,7 @@ const (
 	ErrInvalidStorageClass
 	ErrBackendDown
 	// Add new extended error codes here.
-	// Please open a https://github.com/bindoffice/bind-store/issues before adding
+	// Please open a https://github.com/bindoffice/bindstore/issues before adding
 	// new error codes here.
 
 	ErrMalformedJSON

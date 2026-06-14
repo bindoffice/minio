@@ -31,10 +31,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bindoffice/bind-store/cmd/crypto"
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/fips"
+	"github.com/bindoffice/bindstore/cmd/crypto"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/fips"
 	"github.com/minio/sio"
 )
 

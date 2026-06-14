@@ -29,13 +29,13 @@ import (
 	"time"
 
 	"github.com/minio/minio-go/v7/pkg/tags"
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/bucket/lifecycle"
-	"github.com/bindoffice/bind-store/pkg/bucket/replication"
-	"github.com/bindoffice/bind-store/pkg/madmin"
-	"github.com/bindoffice/bind-store/pkg/mimedb"
-	"github.com/bindoffice/bind-store/pkg/sync/errgroup"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/bucket/lifecycle"
+	"github.com/bindoffice/bindstore/pkg/bucket/replication"
+	"github.com/bindoffice/bindstore/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/mimedb"
+	"github.com/bindoffice/bindstore/pkg/sync/errgroup"
 )
 
 // list all errors which can be ignored in object operations.

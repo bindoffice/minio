@@ -19,7 +19,7 @@ package cmd
 import "errors"
 
 // errUnexpected - unexpected error, requires manual intervention.
-var errUnexpected = StorageErr("unexpected error, please report this issue at https://github.com/bindoffice/bind-store/issues")
+var errUnexpected = StorageErr("unexpected error, please report this issue at https://github.com/bindoffice/bindstore/issues")
 
 // errCorruptedFormat - corrupted backend format.
 var errCorruptedFormat = StorageErr("corrupted backend format, specified disk mount has unexpected previous content")

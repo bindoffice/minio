@@ -27,8 +27,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/bindoffice/bind-store/pkg/event"
-	xnet "github.com/bindoffice/bind-store/pkg/net"
+	"github.com/bindoffice/bindstore/pkg/event"
+	xnet "github.com/bindoffice/bindstore/pkg/net"
 
 	sarama "github.com/Shopify/sarama"
 	saramatls "github.com/Shopify/sarama/tools/tls"

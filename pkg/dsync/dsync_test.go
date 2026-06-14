@@ -33,8 +33,8 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/bindoffice/bind-store/pkg/dsync"
-	. "github.com/bindoffice/bind-store/pkg/dsync"
+	"github.com/bindoffice/bindstore/pkg/dsync"
+	. "github.com/bindoffice/bindstore/pkg/dsync"
 )
 
 const numberOfNodes = 5

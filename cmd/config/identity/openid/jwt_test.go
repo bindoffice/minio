@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	xnet "github.com/bindoffice/bind-store/pkg/net"
+	xnet "github.com/bindoffice/bindstore/pkg/net"
 )
 
 func TestUpdateClaimsExpiry(t *testing.T) {

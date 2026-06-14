@@ -29,10 +29,10 @@ import (
 
 	jwtgo "github.com/golang-jwt/jwt/v4"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/auth"
-	iampolicy "github.com/bindoffice/bind-store/pkg/iam/policy"
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/auth"
+	iampolicy "github.com/bindoffice/bindstore/pkg/iam/policy"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 // IAMObjectStore implements IAMStorageAPI

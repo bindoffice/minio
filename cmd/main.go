@@ -22,9 +22,9 @@ import (
 	"sort"
 
 	"github.com/minio/cli"
-	"github.com/bindoffice/bind-store/pkg/console"
-	"github.com/bindoffice/bind-store/pkg/trie"
-	"github.com/bindoffice/bind-store/pkg/words"
+	"github.com/bindoffice/bindstore/pkg/console"
+	"github.com/bindoffice/bindstore/pkg/trie"
+	"github.com/bindoffice/bindstore/pkg/words"
 )
 
 // GlobalFlags - global flags for minio.
@@ -138,11 +138,11 @@ func newApp(name string) *cli.App {
 	app.Usage = "High Performance Object Storage"
 	app.Description = `Build high performance data infrastructure for machine learning, analytics and application data workloads with MinIO`
 	app.Flags = GlobalFlags
-	app.HideHelpCommand = true // Hide `help, h` command, we already have `bind-store --help`.
+	app.HideHelpCommand = true // Hide `help, h` command, we already have `bindstore --help`.
 	app.Commands = commands
 	app.CustomAppHelpTemplate = minioHelpTemplate
 	app.CommandNotFound = func(ctx *cli.Context, command string) {
-		console.Printf("‘%s’ is not a bind-store sub-command. See ‘bind-store --help’.\n", command)
+		console.Printf("‘%s’ is not a bindstore sub-command. See ‘bindstore --help’.\n", command)
 		closestCommands := findClosestCommands(command)
 		if len(closestCommands) > 0 {
 			console.Println()

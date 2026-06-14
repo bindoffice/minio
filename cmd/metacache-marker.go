@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bindstore/cmd/logger"
 )
 
 // markerTagVersion is the marker version.

@@ -26,12 +26,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bindoffice/bind-store/cmd/config"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/env"
-	"github.com/bindoffice/bind-store/pkg/event"
-	"github.com/bindoffice/bind-store/pkg/event/target"
-	xnet "github.com/bindoffice/bind-store/pkg/net"
+	"github.com/bindoffice/bindstore/cmd/config"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/env"
+	"github.com/bindoffice/bindstore/pkg/event"
+	"github.com/bindoffice/bindstore/pkg/event/target"
+	xnet "github.com/bindoffice/bindstore/pkg/net"
 )
 
 const (

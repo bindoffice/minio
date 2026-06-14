@@ -32,7 +32,7 @@ import (
 
 	"github.com/minio/highwayhash"
 	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/bindoffice/bind-store/cmd/logger/message/log"
+	"github.com/bindoffice/bindstore/cmd/logger/message/log"
 )
 
 var (
@@ -202,9 +202,9 @@ func Init(goPath string, goRoot string) {
 	// Remove duplicate entries.
 	trimStrings = uniqueEntries(trimStrings)
 
-	// Add "github.com/bindoffice/bind-store" as the last to cover
-	// paths like "{GOROOT}/src/github.com/bindoffice/bind-store"
-	// and "{GOPATH}/src/github.com/bindoffice/bind-store"
+	// Add "github.com/bindoffice/bindstore" as the last to cover
+	// paths like "{GOROOT}/src/github.com/bindoffice/bindstore"
+	// and "{GOPATH}/src/github.com/bindoffice/bindstore"
 	trimStrings = append(trimStrings, filepath.Join("github.com", "minio", "minio")+string(filepath.Separator))
 
 	loggerHighwayHasher, _ = highwayhash.New(magicHighwayHash256Key) // New will never return error since key is 256 bit

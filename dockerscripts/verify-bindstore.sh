@@ -17,14 +17,14 @@
 
 set -e
 
-if [ ! -x "/usr/bin/bind-store" ]; then
-    echo "bind-store executable binary not found, refusing to proceed"
+if [ ! -x "/usr/bin/bindstore" ]; then
+    echo "bindstore executable binary not found, refusing to proceed"
     exit 1
 fi
 
 verify_sha256sum() {
     echo "verifying binary checksum"
-    echo "$(awk '{print $1}' /usr/bin/bind-store.sha256sum)  /usr/bin/bind-store" | sha256sum -c
+    echo "$(awk '{print $1}' /usr/bin/bindstore.sha256sum)  /usr/bin/bindstore" | sha256sum -c
 }
 
 verify_signature() {
@@ -33,7 +33,7 @@ verify_signature() {
         return
     fi
     echo "verifying binary signature"
-    minisign -VQm /usr/bin/bind-store -P RWTx5Zr1tiHQLwG9keckT0c45M3AGeHD6IvimQHpyRywVWGbP1aVSGav
+    minisign -VQm /usr/bin/bindstore -P RWTx5Zr1tiHQLwG9keckT0c45M3AGeHD6IvimQHpyRywVWGbP1aVSGav
 }
 
 main() {

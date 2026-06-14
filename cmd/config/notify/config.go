@@ -17,7 +17,7 @@
 package notify
 
 import (
-	"github.com/bindoffice/bind-store/pkg/event/target"
+	"github.com/bindoffice/bindstore/pkg/event/target"
 )
 
 // Config - notification target configuration structure, holds

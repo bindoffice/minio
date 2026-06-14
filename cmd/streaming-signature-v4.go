@@ -30,8 +30,8 @@ import (
 	"time"
 
 	humanize "github.com/dustin/go-humanize"
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	"github.com/bindoffice/bind-store/pkg/auth"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	"github.com/bindoffice/bindstore/pkg/auth"
 )
 
 // Streaming AWS Signature Version '4' constants.

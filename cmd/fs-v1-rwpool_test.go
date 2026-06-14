@@ -21,7 +21,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/lock"
+	"github.com/bindoffice/bindstore/pkg/lock"
 )
 
 // Tests long path calls.

@@ -21,8 +21,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	"github.com/bindoffice/bind-store/pkg/wildcard"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	"github.com/bindoffice/bindstore/pkg/wildcard"
 	"github.com/rs/cors"
 )
 
