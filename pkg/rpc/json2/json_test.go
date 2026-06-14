@@ -18,7 +18,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bindoffice/minio/pkg/rpc"
+	"github.com/bindoffice/bind-store/pkg/rpc"
 )
 
 // ResponseRecorder is an implementation of http.ResponseWriter that

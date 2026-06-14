@@ -29,7 +29,7 @@ import (
 	"strings"
 
 	jsoniter "github.com/json-iterator/go"
-	"github.com/bindoffice/minio/cmd/logger"
+	"github.com/bindoffice/bind-store/cmd/logger"
 	"github.com/minio/sio"
 )
 

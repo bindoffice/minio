@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"time"
 
-	trace "github.com/bindoffice/minio/pkg/trace"
+	trace "github.com/bindoffice/bind-store/pkg/trace"
 )
 
 // ServiceRestart - restarts the MinIO cluster

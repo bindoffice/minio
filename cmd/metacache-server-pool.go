@@ -28,7 +28,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bindoffice/minio/cmd/logger"
+	"github.com/bindoffice/bind-store/cmd/logger"
 )
 
 func renameAllBucketMetacache(epPath string) error {

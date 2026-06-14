@@ -16,7 +16,7 @@
 
 package openid
 
-import "github.com/bindoffice/minio/cmd/config"
+import "github.com/bindoffice/bind-store/cmd/config"
 
 // Legacy envs
 const (

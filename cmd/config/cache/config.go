@@ -22,8 +22,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/bindoffice/minio/cmd/config"
-	"github.com/bindoffice/minio/pkg/ellipses"
+	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bind-store/pkg/ellipses"
 )
 
 // Config represents cache config settings

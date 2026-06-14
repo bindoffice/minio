@@ -26,8 +26,8 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/bindoffice/minio/pkg/event"
-	xnet "github.com/bindoffice/minio/pkg/net"
+	"github.com/bindoffice/bind-store/pkg/event"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 	"github.com/streadway/amqp"
 )
 

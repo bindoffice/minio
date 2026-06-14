@@ -20,7 +20,7 @@ import (
 	"encoding/base64"
 	"net/http"
 
-	xhttp "github.com/bindoffice/minio/cmd/http"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
 )
 
 // RemoveSensitiveHeaders removes confidential encryption

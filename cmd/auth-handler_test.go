@@ -27,8 +27,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bindoffice/minio/pkg/auth"
-	iampolicy "github.com/bindoffice/minio/pkg/iam/policy"
+	"github.com/bindoffice/bind-store/pkg/auth"
+	iampolicy "github.com/bindoffice/bind-store/pkg/iam/policy"
 )
 
 // Test get request auth type.

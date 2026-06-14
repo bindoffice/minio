@@ -21,7 +21,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/bindoffice/minio/cmd/config"
+	"github.com/bindoffice/bind-store/cmd/config"
 )
 
 func TestServerConfig(t *testing.T) {

@@ -22,7 +22,7 @@ import (
 	"hash"
 	"io"
 
-	"github.com/bindoffice/minio/cmd/logger"
+	"github.com/bindoffice/bind-store/cmd/logger"
 )
 
 // Implementation to calculate bitrot for the whole file.

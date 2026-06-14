@@ -23,7 +23,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bindoffice/minio/pkg/event"
+	"github.com/bindoffice/bind-store/pkg/event"
 )
 
 // TestDir

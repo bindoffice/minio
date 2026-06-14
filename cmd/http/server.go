@@ -29,11 +29,11 @@ import (
 	humanize "github.com/dustin/go-humanize"
 
 	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/bindoffice/minio/cmd/config"
-	"github.com/bindoffice/minio/cmd/config/api"
-	"github.com/bindoffice/minio/pkg/certs"
-	"github.com/bindoffice/minio/pkg/env"
-	"github.com/bindoffice/minio/pkg/fips"
+	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bind-store/cmd/config/api"
+	"github.com/bindoffice/bind-store/pkg/certs"
+	"github.com/bindoffice/bind-store/pkg/env"
+	"github.com/bindoffice/bind-store/pkg/fips"
 )
 
 const (

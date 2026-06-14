@@ -24,7 +24,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bindoffice/minio/cmd/logger"
+	"github.com/bindoffice/bind-store/cmd/logger"
 )
 
 type scanStatus uint8

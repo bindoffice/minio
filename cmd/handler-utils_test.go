@@ -28,7 +28,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bindoffice/minio/cmd/config"
+	"github.com/bindoffice/bind-store/cmd/config"
 )
 
 // Tests validate bucket LocationConstraint.

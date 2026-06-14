@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bindoffice/minio/pkg/bandwidth"
+	"github.com/bindoffice/bind-store/pkg/bandwidth"
 )
 
 // throttleBandwidth gets the throttle for bucket with the configured value

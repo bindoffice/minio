@@ -22,10 +22,10 @@ import (
 	"time"
 
 	"github.com/bcicen/jstream"
-	parquetgo "github.com/bindoffice/minio/pkg/s3select/internal/parquet-go"
-	parquetgen "github.com/bindoffice/minio/pkg/s3select/internal/parquet-go/gen-go/parquet"
-	jsonfmt "github.com/bindoffice/minio/pkg/s3select/json"
-	"github.com/bindoffice/minio/pkg/s3select/sql"
+	parquetgo "github.com/bindoffice/bind-store/pkg/s3select/internal/parquet-go"
+	parquetgen "github.com/bindoffice/bind-store/pkg/s3select/internal/parquet-go/gen-go/parquet"
+	jsonfmt "github.com/bindoffice/bind-store/pkg/s3select/json"
+	"github.com/bindoffice/bind-store/pkg/s3select/sql"
 )
 
 // Reader - Parquet record reader for S3Select.

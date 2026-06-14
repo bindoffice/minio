@@ -21,7 +21,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/bindoffice/minio/pkg/s3select/sql"
+	"github.com/bindoffice/bind-store/pkg/s3select/sql"
 
 	"github.com/bcicen/jstream"
 )

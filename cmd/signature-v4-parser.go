@@ -22,8 +22,8 @@ import (
 	"strings"
 	"time"
 
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/pkg/auth"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/pkg/auth"
 )
 
 // credentialHeader data type represents structured form of Credential

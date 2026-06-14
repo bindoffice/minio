@@ -23,7 +23,7 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/bindoffice/minio/pkg/argon2"
+	"github.com/bindoffice/bind-store/pkg/argon2"
 	"github.com/secure-io/sio-go"
 	"github.com/secure-io/sio-go/sioutil"
 )

@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"io"
 
-	csv "github.com/bindoffice/minio/pkg/csvparser"
+	csv "github.com/bindoffice/bind-store/pkg/csvparser"
 
 	"github.com/bcicen/jstream"
-	"github.com/bindoffice/minio/pkg/s3select/json"
-	"github.com/bindoffice/minio/pkg/s3select/sql"
+	"github.com/bindoffice/bind-store/pkg/s3select/json"
+	"github.com/bindoffice/bind-store/pkg/s3select/sql"
 	"github.com/minio/simdjson-go"
 )
 

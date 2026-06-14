@@ -26,10 +26,10 @@ import (
 
 	jsoniter "github.com/json-iterator/go"
 	miniogopolicy "github.com/minio/minio-go/v7/pkg/policy"
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/bucket/policy"
-	"github.com/bindoffice/minio/pkg/handlers"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy"
+	"github.com/bindoffice/bind-store/pkg/handlers"
 )
 
 // PolicySys - policy subsystem.

@@ -16,7 +16,7 @@
 
 package ldap
 
-import "github.com/bindoffice/minio/cmd/config"
+import "github.com/bindoffice/bind-store/cmd/config"
 
 // Help template for LDAP identity feature.
 var (

@@ -10,7 +10,7 @@ GOLANGCI_VERSION ?= v2.4.0
 GOLANGCI_LINT := $(GOPATH)/bin/golangci-lint
 
 VERSION ?= $(shell git describe --tags)
-TAG ?= "minio/minio:$(VERSION)"
+TAG ?= "bindoffice/bind-store:$(VERSION)"
 
 all: build
 
@@ -41,7 +41,7 @@ lint:
 	@GO111MODULE=on $(GOLANGCI_LINT) cache clean
 	@GO111MODULE=on $(GOLANGCI_LINT) run --config ./.golangci.yml
 
-# Builds minio, runs the verifiers then runs the tests.
+# Builds bind-store, runs the verifiers then runs the tests.
 check: test
 test: verifiers build
 	@echo "Running unit tests"
@@ -51,48 +51,48 @@ test-race: verifiers build
 	@echo "Running unit tests under -race"
 	@(env bash $(PWD)/buildscripts/race.sh)
 
-# Verify minio binary
+# Verify bind-store binary
 verify:
 	@echo "Verifying build with race"
-	@GO111MODULE=on CGO_ENABLED=1 go build -tags kqueue -trimpath --ldflags "$(LDFLAGS)" -o $(PWD)/minio 1>/dev/null
+	@GO111MODULE=on CGO_ENABLED=1 go build -tags kqueue -trimpath --ldflags "$(LDFLAGS)" -o $(PWD)/bind-store 1>/dev/null
 	@(env bash $(PWD)/buildscripts/verify-build.sh)
 
-# Verify healing of disks with minio binary
+# Verify healing of disks with bind-store binary
 verify-healing:
 	@echo "Verify healing build with race"
-	@GO111MODULE=on CGO_ENABLED=1 go build -race -tags kqueue -trimpath --ldflags "$(LDFLAGS)" -o $(PWD)/minio 1>/dev/null
+	@GO111MODULE=on CGO_ENABLED=1 go build -race -tags kqueue -trimpath --ldflags "$(LDFLAGS)" -o $(PWD)/bind-store 1>/dev/null
 	@(env bash $(PWD)/buildscripts/verify-healing.sh)
 
-# Builds minio locally.
+# Builds bind-store locally.
 build: checks
-	@echo "Building minio binary to './minio'"
-	@GO111MODULE=on CGO_ENABLED=0 go build -tags kqueue -trimpath --ldflags "$(LDFLAGS)" -o $(PWD)/minio 1>/dev/null
+	@echo "Building bind-store binary to './bind-store'"
+	@GO111MODULE=on CGO_ENABLED=0 go build -tags kqueue -trimpath --ldflags "$(LDFLAGS)" -o $(PWD)/bind-store 1>/dev/null
 
 hotfix-vars:
 	$(eval LDFLAGS := $(shell MINIO_RELEASE="RELEASE" MINIO_HOTFIX="hotfix.$(shell git rev-parse --short HEAD)" go run buildscripts/gen-ldflags.go $(shell git describe --tags --abbrev=0 | \
     sed 's#RELEASE\.\([0-9]\+\)-\([0-9]\+\)-\([0-9]\+\)T\([0-9]\+\)-\([0-9]\+\)-\([0-9]\+\)Z#\1-\2-\3T\4:\5:\6Z#')))
-	$(eval TAG := "minio/minio:$(shell git describe --tags --abbrev=0).hotfix.$(shell git rev-parse --short HEAD)")
+	$(eval TAG := "bindoffice/bind-store:$(shell git describe --tags --abbrev=0).hotfix.$(shell git rev-parse --short HEAD)")
 hotfix: hotfix-vars install
 
 docker-hotfix: hotfix checks
-	@echo "Building minio docker image '$(TAG)'"
+	@echo "Building bind-store docker image '$(TAG)'"
 	@docker build -t $(TAG) . -f Dockerfile.dev
 
 docker: build checks
-	@echo "Building minio docker image '$(TAG)'"
+	@echo "Building bind-store docker image '$(TAG)'"
 	@docker build -t $(TAG) . -f Dockerfile.dev
 
-# Builds minio and installs it to $GOPATH/bin.
+# Builds bind-store and installs it to $GOPATH/bin.
 install: build
-	@echo "Installing minio binary to '$(GOPATH)/bin/minio'"
-	@mkdir -p $(GOPATH)/bin && cp -f $(PWD)/minio $(GOPATH)/bin/minio
-	@echo "Installation successful. To learn more, try \"minio --help\"."
+	@echo "Installing bind-store binary to '$(GOPATH)/bin/bind-store'"
+	@mkdir -p $(GOPATH)/bin && cp -f $(PWD)/bind-store $(GOPATH)/bin/bind-store
+	@echo "Installation successful. To learn more, try \"bind-store --help\"."
 
 clean:
 	@echo "Cleaning up all the generated files"
 	@find . -name '*.test' | xargs rm -fv
 	@find . -name '*~' | xargs rm -fv
-	@rm -rvf minio
+	@rm -rvf bind-store
 	@rm -rvf build
 	@rm -rvf release
 	@rm -rvf .verify*

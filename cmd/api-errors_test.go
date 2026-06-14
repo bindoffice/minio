@@ -23,8 +23,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/bindoffice/minio/cmd/crypto"
-	"github.com/bindoffice/minio/pkg/hash"
+	"github.com/bindoffice/bind-store/cmd/crypto"
+	"github.com/bindoffice/bind-store/pkg/hash"
 )
 
 var toAPIErrorTests = []struct {

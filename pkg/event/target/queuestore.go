@@ -25,8 +25,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/bindoffice/minio/pkg/event"
-	"github.com/bindoffice/minio/pkg/sys"
+	"github.com/bindoffice/bind-store/pkg/event"
+	"github.com/bindoffice/bind-store/pkg/sys"
 )
 
 const (

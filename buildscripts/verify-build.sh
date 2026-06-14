@@ -19,8 +19,8 @@ set -e
 set -E
 set -o pipefail
 
-if [ ! -x "$PWD/minio" ]; then
-    echo "minio executable binary not found in current directory"
+if [ ! -x "$PWD/bind-store" ]; then
+    echo "bind-store executable binary not found in current directory"
     exit 1
 fi
 
@@ -41,7 +41,7 @@ export MC_HOST_verify="http://${ACCESS_KEY}:${SECRET_KEY}@${SERVER_ENDPOINT}/"
 export MC_HOST_verify_ipv6="http://${ACCESS_KEY}:${SECRET_KEY}@[::1]:9000/"
 
 MINIO_CONFIG_DIR="$WORK_DIR/.minio"
-MINIO=( "$PWD/minio" --config-dir "$MINIO_CONFIG_DIR" )
+MINIO=( "$PWD/bind-store" --config-dir "$MINIO_CONFIG_DIR" )
 
 FILE_1_MB="$MINT_DATA_DIR/datafile-1-MB"
 FILE_65_MB="$MINT_DATA_DIR/datafile-65-MB"
@@ -176,7 +176,7 @@ function run_test_fs()
     (cd "$WORK_DIR" && "$FUNCTIONAL_TESTS") | tee "$WORK_DIR/functional-tests.log"
     rv=${PIPESTATUS[0]}
 
-    pkill minio || true
+    pkill bind-store || true
     sleep 3
 
     if [ "$rv" -ne 0 ]; then
@@ -197,7 +197,7 @@ function run_test_erasure_sets()
     (cd "$WORK_DIR" && "$FUNCTIONAL_TESTS") | tee "$WORK_DIR/functional-tests.log"
     rv=${PIPESTATUS[0]}
 
-    pkill minio || true
+    pkill bind-store || true
     sleep 3
 
     if [ "$rv" -ne 0 ]; then
@@ -218,7 +218,7 @@ function run_test_pool_erasure_sets()
     (cd "$WORK_DIR" && "$FUNCTIONAL_TESTS") | tee "$WORK_DIR/functional-tests.log"
     rv=${PIPESTATUS[0]}
 
-    pkill minio || true
+    pkill bind-store || true
     sleep 3
 
     if [ "$rv" -ne 0 ]; then
@@ -249,7 +249,7 @@ function run_test_pool_erasure_sets_ipv6()
 
     export SERVER_ENDPOINT="127.0.0.1:9000"
 
-    pkill minio || true
+    pkill bind-store || true
     sleep 3
 
     if [ "$rv" -ne 0 ]; then
@@ -276,7 +276,7 @@ function run_test_erasure()
     (cd "$WORK_DIR" && "$FUNCTIONAL_TESTS") | tee "$WORK_DIR/functional-tests.log"
     rv=${PIPESTATUS[0]}
 
-    pkill minio || true
+    pkill bind-store || true
     sleep 3
 
     if [ "$rv" -ne 0 ]; then
@@ -297,7 +297,7 @@ function run_test_dist_erasure()
     (cd "$WORK_DIR" && "$FUNCTIONAL_TESTS") | tee "$WORK_DIR/functional-tests.log"
     rv=${PIPESTATUS[0]}
 
-    pkill minio || true
+    pkill bind-store || true
     sleep 3
 
     if [ "$rv" -ne 0 ]; then

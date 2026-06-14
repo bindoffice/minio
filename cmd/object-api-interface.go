@@ -24,8 +24,8 @@ import (
 
 	"github.com/minio/minio-go/v7/pkg/encrypt"
 	"github.com/minio/minio-go/v7/pkg/tags"
-	"github.com/bindoffice/minio/pkg/bucket/policy"
-	"github.com/bindoffice/minio/pkg/madmin"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy"
+	"github.com/bindoffice/bind-store/pkg/madmin"
 )
 
 // CheckPreconditionFn returns true if precondition check failed.

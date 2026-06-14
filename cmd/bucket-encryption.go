@@ -20,7 +20,7 @@ import (
 	"errors"
 	"io"
 
-	bucketsse "github.com/bindoffice/minio/pkg/bucket/encryption"
+	bucketsse "github.com/bindoffice/bind-store/pkg/bucket/encryption"
 )
 
 // BucketSSEConfigSys - in-memory cache of bucket encryption config

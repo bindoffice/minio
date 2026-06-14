@@ -21,9 +21,9 @@ import (
 	"testing"
 
 	miniogo "github.com/minio/minio-go/v7"
-	"github.com/bindoffice/minio/pkg/hash"
+	"github.com/bindoffice/bind-store/pkg/hash"
 
-	minio "github.com/bindoffice/minio/cmd"
+	minio "github.com/bindoffice/bind-store/cmd"
 )
 
 func errResponse(code string) miniogo.ErrorResponse {

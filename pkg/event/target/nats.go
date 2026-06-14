@@ -26,8 +26,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/bindoffice/minio/pkg/event"
-	xnet "github.com/bindoffice/minio/pkg/net"
+	"github.com/bindoffice/bind-store/pkg/event"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 	"github.com/nats-io/nats.go"
 	"github.com/nats-io/stan.go"
 )

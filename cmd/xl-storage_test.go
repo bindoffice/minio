@@ -30,7 +30,7 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/bindoffice/minio/cmd/config/storageclass"
+	"github.com/bindoffice/bind-store/cmd/config/storageclass"
 )
 
 func TestCheckPathLength(t *testing.T) {

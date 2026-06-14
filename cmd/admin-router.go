@@ -20,7 +20,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/bindoffice/minio/pkg/madmin"
+	"github.com/bindoffice/bind-store/pkg/madmin"
 )
 
 const (

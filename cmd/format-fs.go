@@ -25,9 +25,9 @@ import (
 	"path"
 	"time"
 
-	"github.com/bindoffice/minio/cmd/config"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/lock"
+	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/lock"
 )
 
 // FS format version strings.

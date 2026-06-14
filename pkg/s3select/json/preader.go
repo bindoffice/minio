@@ -24,7 +24,7 @@ import (
 	"sync"
 
 	"github.com/bcicen/jstream"
-	"github.com/bindoffice/minio/pkg/s3select/sql"
+	"github.com/bindoffice/bind-store/pkg/s3select/sql"
 )
 
 // PReader - JSON record reader for S3Select.

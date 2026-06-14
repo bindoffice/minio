@@ -25,8 +25,8 @@ Let's setup a server and register a codec and service:
 
 	import (
 		"http"
-		"github.com/bindoffice/minio/pkg/rpc/"
-		"github.com/bindoffice/minio/pkg/rpc/json2"
+		"github.com/bindoffice/bind-store/pkg/rpc/"
+		"github.com/bindoffice/bind-store/pkg/rpc/json2"
 	)
 
 	func init() {

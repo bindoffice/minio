@@ -7,18 +7,18 @@
 Start by forking the MinIO GitHub repository, make changes in a branch and then send a pull request. We encourage pull requests to discuss code changes. Here are the steps in details:
 
 ### Setup your MinIO GitHub Repository
-Fork [MinIO upstream](https://github.com/bindoffice/minio/fork) source repository to your own personal repository. Copy the URL of your MinIO fork (you will need it for the `git clone` command below).
+Fork [MinIO upstream](https://github.com/bindoffice/bind-store/fork) source repository to your own personal repository. Copy the URL of your MinIO fork (you will need it for the `git clone` command below).
 
 ```sh
-$ git clone https://github.com/bindoffice/minio
+$ git clone https://github.com/bindoffice/bind-store
 $ go install -v
-$ ls /go/bin/minio
+$ ls $(go env GOPATH)/bin/bind-store
 ```
 
 ### Set up git remote as ``upstream``
 ```sh
-$ cd minio
-$ git remote add upstream https://github.com/bindoffice/minio
+$ cd bind-store
+$ git remote add upstream https://github.com/bindoffice/bind-store
 $ git fetch upstream
 $ git merge upstream/master
 ...

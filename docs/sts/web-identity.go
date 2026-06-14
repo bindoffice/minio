@@ -37,7 +37,7 @@ import (
 
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/bindoffice/minio/pkg/auth"
+	"github.com/bindoffice/bind-store/pkg/auth"
 )
 
 // AssumedRoleUser - The identifiers for the temporary security credentials that

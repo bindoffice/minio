@@ -23,12 +23,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bindoffice/minio/cmd/config"
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/env"
-	"github.com/bindoffice/minio/pkg/hash"
-	xnet "github.com/bindoffice/minio/pkg/net"
+	"github.com/bindoffice/bind-store/cmd/config"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/env"
+	"github.com/bindoffice/bind-store/pkg/hash"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 
 	minio "github.com/minio/minio-go/v7"
 )

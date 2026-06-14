@@ -23,9 +23,9 @@ import (
 	"net/http"
 
 	jsoniter "github.com/json-iterator/go"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/hash"
-	"github.com/bindoffice/minio/pkg/madmin"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/hash"
+	"github.com/bindoffice/bind-store/pkg/madmin"
 )
 
 const (

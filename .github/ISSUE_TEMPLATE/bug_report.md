@@ -24,7 +24,7 @@ assignees: ''
 ## Steps to Reproduce (for bugs)
 <!--- Provide a link to a live example, or an unambiguous set of steps to -->
 <!--- reproduce this bug. Include code to reproduce, if relevant -->
-<!--- and make sure you have followed https://github.com/bindoffice/minio/tree/release/docs/debugging to capture relevant logs -->
+<!--- and make sure you have followed https://github.com/bindoffice/bind-store/tree/release/docs/debugging to capture relevant logs -->
 
 1.
 2.
@@ -41,6 +41,6 @@ assignees: ''
 
 ## Your Environment
 <!--- Include as many relevant details about the environment you experienced the bug in -->
-* Version used (`minio --version`):
+* Version used (`bind-store --version`):
 * Server setup and configuration:
 * Operating System and version (`uname -a`):

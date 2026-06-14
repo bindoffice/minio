@@ -22,7 +22,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/bindoffice/minio/pkg/madmin"
+	"github.com/bindoffice/bind-store/pkg/madmin"
 )
 
 // Tests for if parent directory is object

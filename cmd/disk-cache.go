@@ -28,14 +28,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/bindoffice/minio/cmd/config/cache"
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/cmd/logger"
-	objectlock "github.com/bindoffice/minio/pkg/bucket/object/lock"
-	"github.com/bindoffice/minio/pkg/color"
-	"github.com/bindoffice/minio/pkg/hash"
-	"github.com/bindoffice/minio/pkg/sync/errgroup"
-	"github.com/bindoffice/minio/pkg/wildcard"
+	"github.com/bindoffice/bind-store/cmd/config/cache"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	objectlock "github.com/bindoffice/bind-store/pkg/bucket/object/lock"
+	"github.com/bindoffice/bind-store/pkg/color"
+	"github.com/bindoffice/bind-store/pkg/hash"
+	"github.com/bindoffice/bind-store/pkg/sync/errgroup"
+	"github.com/bindoffice/bind-store/pkg/wildcard"
 )
 
 const (

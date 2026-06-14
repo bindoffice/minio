@@ -25,8 +25,8 @@ import (
 	"io"
 	"path"
 
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/fips"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/fips"
 	"github.com/minio/sio"
 )
 

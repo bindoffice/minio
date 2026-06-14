@@ -26,12 +26,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/bpool"
-	"github.com/bindoffice/minio/pkg/color"
-	"github.com/bindoffice/minio/pkg/dsync"
-	"github.com/bindoffice/minio/pkg/madmin"
-	"github.com/bindoffice/minio/pkg/sync/errgroup"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/bpool"
+	"github.com/bindoffice/bind-store/pkg/color"
+	"github.com/bindoffice/bind-store/pkg/dsync"
+	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bind-store/pkg/sync/errgroup"
 )
 
 // OfflineDisk represents an unavailable disk.

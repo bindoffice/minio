@@ -21,8 +21,8 @@ import (
 	"encoding/xml"
 	"net/http"
 
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/cmd/logger"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/logger"
 )
 
 // writeSTSErrorRespone writes error headers

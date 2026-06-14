@@ -28,8 +28,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/cmd/logger/message/log"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/cmd/logger/message/log"
 )
 
 type testLoggerI interface {

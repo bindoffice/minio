@@ -17,7 +17,7 @@
 package s3
 
 import (
-	minio "github.com/bindoffice/minio/cmd"
+	minio "github.com/bindoffice/bind-store/cmd"
 )
 
 // List of header keys to be filtered, usually

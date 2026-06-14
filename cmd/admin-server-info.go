@@ -22,8 +22,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/madmin"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/madmin"
 )
 
 // getLocalServerProperty - returns madmin.ServerProperties for only the

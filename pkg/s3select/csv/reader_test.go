@@ -28,7 +28,7 @@ import (
 	"testing"
 
 	"github.com/klauspost/compress/zip"
-	"github.com/bindoffice/minio/pkg/s3select/sql"
+	"github.com/bindoffice/bind-store/pkg/s3select/sql"
 )
 
 func TestReadRejectsOversizedLine(t *testing.T) {

@@ -19,14 +19,14 @@ set -e
 set -E
 set -o pipefail
 
-if [ ! -x "$PWD/minio" ]; then
-    echo "minio executable binary not found in current directory"
+if [ ! -x "$PWD/bind-store" ]; then
+    echo "bind-store executable binary not found in current directory"
     exit 1
 fi
 
 WORK_DIR="$PWD/.verify-$RANDOM"
 MINIO_CONFIG_DIR="$WORK_DIR/.minio"
-MINIO=( "$PWD/minio" --config-dir "$MINIO_CONFIG_DIR" server )
+MINIO=( "$PWD/bind-store" --config-dir "$MINIO_CONFIG_DIR" server )
 
 export GOGC=25
 export MINIO_CI_CD=1
@@ -55,7 +55,7 @@ function start_minio_3_node() {
     disown $!
 
     sleep "$1"
-    if [ "$(pgrep -c minio)" -ne 3 ]; then
+    if [ "$(pgrep -c bind-store)" -ne 3 ]; then
         for i in $(seq 1 3); do
             echo "server$i log:"
             cat "${WORK_DIR}/dist-minio-server$i.log"
@@ -64,7 +64,7 @@ function start_minio_3_node() {
         purge "$WORK_DIR"
         exit 1
     fi
-    if ! pkill minio; then
+    if ! pkill bind-store; then
         for i in $(seq 1 3); do
             echo "server$i log:"
             cat "${WORK_DIR}/dist-minio-server$i.log"
@@ -75,9 +75,9 @@ function start_minio_3_node() {
     fi
 
     sleep 1;
-    if pgrep minio; then
+    if pgrep bind-store; then
         # forcibly killing, to proceed further properly.
-        if ! pkill -9 minio; then
+        if ! pkill -9 bind-store; then
             echo "no minio process running anymore, proceed."
         fi
     fi
@@ -117,7 +117,7 @@ function perform_test() {
 
     rv=$(check_online)
     if [ "$rv" == "1" ]; then
-        pkill -9 minio
+        pkill -9 bind-store
         for i in $(seq 1 3); do
             echo "server$i log:"
             cat "${WORK_DIR}/dist-minio-server$i.log"

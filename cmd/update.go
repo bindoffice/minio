@@ -34,10 +34,10 @@ import (
 	"strings"
 	"time"
 
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/env"
-	xnet "github.com/bindoffice/minio/pkg/net"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/env"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 	"github.com/minio/selfupdate"
 )
 
@@ -227,7 +227,7 @@ func IsPCFTile() bool {
 //   MinIO (<OS>; <ARCH>[; <MODE>][; dcos][; kubernetes][; docker][; source]) MinIO/<VERSION> MinIO/<RELEASE-TAG> MinIO/<COMMIT-ID> [MinIO/universe-<PACKAGE-NAME>] [MinIO/helm-<HELM-VERSION>]
 //
 // Any change here should be discussed by opening an issue at
-// https://github.com/bindoffice/minio/issues.
+// https://github.com/bindoffice/bind-store/issues.
 func getUserAgent(mode string) string {
 
 	userAgentParts := []string{}

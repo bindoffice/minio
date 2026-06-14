@@ -19,7 +19,7 @@ package target
 import (
 	"testing"
 
-	xnet "github.com/bindoffice/minio/pkg/net"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 )
 
 func TestNSQArgs_Validate(t *testing.T) {

@@ -16,7 +16,7 @@
 
 package cmd
 
-import "github.com/bindoffice/minio/pkg/bucket/versioning"
+import "github.com/bindoffice/bind-store/pkg/bucket/versioning"
 
 // BucketVersioningSys - policy subsystem.
 type BucketVersioningSys struct{}

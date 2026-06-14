@@ -24,10 +24,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/bindoffice/minio/pkg/bucket/policy"
-	"github.com/bindoffice/minio/pkg/bucket/policy/condition"
-	iampolicy "github.com/bindoffice/minio/pkg/iam/policy"
-	"github.com/bindoffice/minio/pkg/madmin"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy/condition"
+	iampolicy "github.com/bindoffice/bind-store/pkg/iam/policy"
+	"github.com/bindoffice/bind-store/pkg/madmin"
 )
 
 func main() {

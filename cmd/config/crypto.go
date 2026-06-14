@@ -23,7 +23,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/bindoffice/minio/pkg/kms"
+	"github.com/bindoffice/bind-store/pkg/kms"
 	"github.com/secure-io/sio-go"
 	"github.com/secure-io/sio-go/sioutil"
 )

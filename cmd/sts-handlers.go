@@ -25,12 +25,12 @@ import (
 	"strings"
 
 	"github.com/gorilla/mux"
-	"github.com/bindoffice/minio/cmd/config/identity/openid"
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/auth"
-	iampolicy "github.com/bindoffice/minio/pkg/iam/policy"
-	"github.com/bindoffice/minio/pkg/wildcard"
+	"github.com/bindoffice/bind-store/cmd/config/identity/openid"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/auth"
+	iampolicy "github.com/bindoffice/bind-store/pkg/iam/policy"
+	"github.com/bindoffice/bind-store/pkg/wildcard"
 )
 
 const (

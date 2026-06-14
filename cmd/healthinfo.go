@@ -25,8 +25,8 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/bindoffice/minio/pkg/disk"
-	"github.com/bindoffice/minio/pkg/madmin"
+	"github.com/bindoffice/bind-store/pkg/disk"
+	"github.com/bindoffice/bind-store/pkg/madmin"
 	cpuhw "github.com/shirou/gopsutil/v3/cpu"
 	memhw "github.com/shirou/gopsutil/v3/mem"
 	"github.com/shirou/gopsutil/v3/process"

@@ -15,10 +15,10 @@
 # limitations under the License.
 #
 
-# If command starts with an option, prepend minio.
-if [ "${1}" != "minio" ]; then
+# If command starts with an option, prepend bind-store.
+if [ "${1}" != "bind-store" ]; then
     if [ -n "${1}" ]; then
-        set -- minio "$@"
+        set -- bind-store "$@"
     fi
 fi
 

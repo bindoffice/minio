@@ -19,7 +19,7 @@ import (
 	"sort"
 	"testing"
 
-	xhttp "github.com/bindoffice/minio/cmd/http"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
 )
 
 func TestIsRequested(t *testing.T) {

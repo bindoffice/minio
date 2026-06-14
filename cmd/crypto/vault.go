@@ -22,7 +22,7 @@ import (
 	"time"
 
 	vault "github.com/hashicorp/vault/api"
-	"github.com/bindoffice/minio/pkg/kms"
+	"github.com/bindoffice/bind-store/pkg/kms"
 )
 
 var (

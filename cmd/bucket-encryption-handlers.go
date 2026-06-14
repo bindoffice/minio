@@ -23,8 +23,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/bucket/policy"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy"
 )
 
 const (

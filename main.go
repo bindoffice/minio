@@ -16,21 +16,21 @@
 
 /*
  * Below main package has canonical imports for 'go get' and 'go build'
- * to work with all other clones of github.com/bindoffice/minio repository. For
+ * to work with all other clones of github.com/bindoffice/bind-store repository. For
  * more information refer https://golang.org/doc/go1.4#canonicalimports
  */
 
-package main // import "github.com/bindoffice/minio"
+package main // import "github.com/bindoffice/bind-store"
 
 import (
 	"os"
 
-	minio "github.com/bindoffice/minio/cmd"
+	bindstore "github.com/bindoffice/bind-store/cmd"
 
 	// Import gateway
-	_ "github.com/bindoffice/minio/cmd/gateway"
+	_ "github.com/bindoffice/bind-store/cmd/gateway"
 )
 
 func main() {
-	minio.Main(os.Args)
+	bindstore.Main(os.Args)
 }

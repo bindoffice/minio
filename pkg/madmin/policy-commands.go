@@ -24,7 +24,7 @@ import (
 	"net/http"
 	"net/url"
 
-	iampolicy "github.com/bindoffice/minio/pkg/iam/policy"
+	iampolicy "github.com/bindoffice/bind-store/pkg/iam/policy"
 )
 
 // InfoCannedPolicy - expand canned policy into JSON structure.

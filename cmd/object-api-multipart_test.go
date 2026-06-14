@@ -25,7 +25,7 @@ import (
 	"testing"
 
 	humanize "github.com/dustin/go-humanize"
-	"github.com/bindoffice/minio/pkg/hash"
+	"github.com/bindoffice/bind-store/pkg/hash"
 )
 
 // Wrapper for calling NewMultipartUpload tests for both Erasure multiple disks and single node setup.

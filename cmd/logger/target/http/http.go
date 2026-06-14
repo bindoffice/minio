@@ -26,8 +26,8 @@ import (
 	"strings"
 	"time"
 
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/cmd/logger"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/logger"
 )
 
 // Target implements logger.Target and sends the json

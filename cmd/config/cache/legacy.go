@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/bindoffice/minio/cmd/config"
+	"github.com/bindoffice/bind-store/cmd/config"
 )
 
 const (

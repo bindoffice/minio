@@ -42,12 +42,12 @@ import (
 
 	humanize "github.com/dustin/go-humanize"
 	"github.com/gorilla/mux"
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/cmd/rest"
-	"github.com/bindoffice/minio/pkg/certs"
-	"github.com/bindoffice/minio/pkg/handlers"
-	"github.com/bindoffice/minio/pkg/madmin"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/cmd/rest"
+	"github.com/bindoffice/bind-store/pkg/certs"
+	"github.com/bindoffice/bind-store/pkg/handlers"
+	"github.com/bindoffice/bind-store/pkg/madmin"
 	"golang.org/x/net/http2"
 )
 

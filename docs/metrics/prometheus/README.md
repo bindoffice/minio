@@ -117,7 +117,7 @@ Here `prometheus.yml` is the name of configuration file. You can now see MinIO m
 ### 6. Configure Grafana
 
 After Prometheus is configured, you can use Grafana to visualize MinIO metrics.
-Refer the [document here to setup Grafana with MinIO prometheus metrics](https://github.com/bindoffice/minio/blob/master/docs/metrics/prometheus/grafana/README.md).
+Refer the [document here to setup Grafana with MinIO prometheus metrics](https://github.com/bindoffice/bind-store/blob/master/docs/metrics/prometheus/grafana/README.md).
 
 ## List of metrics exposed by MinIO
 
@@ -129,4 +129,4 @@ curl https://play.min.io/minio/v2/metrics/cluster
 
 ### List of metrics reported
 
-[The list of metrics reported can be here](https://github.com/bindoffice/minio/blob/master/docs/metrics/prometheus/list.md)
+[The list of metrics reported can be here](https://github.com/bindoffice/bind-store/blob/master/docs/metrics/prometheus/list.md)

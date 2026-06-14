@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bindoffice/minio/pkg/bandwidth"
+	"github.com/bindoffice/bind-store/pkg/bandwidth"
 )
 
 const (

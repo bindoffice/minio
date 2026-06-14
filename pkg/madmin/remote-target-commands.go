@@ -27,7 +27,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bindoffice/minio/pkg/auth"
+	"github.com/bindoffice/bind-store/pkg/auth"
 )
 
 // ServiceType represents service type

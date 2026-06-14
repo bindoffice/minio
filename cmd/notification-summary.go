@@ -18,7 +18,7 @@
 package cmd
 
 import (
-	"github.com/bindoffice/minio/pkg/madmin"
+	"github.com/bindoffice/bind-store/pkg/madmin"
 )
 
 // GetTotalCapacity gets the total capacity in the cluster.

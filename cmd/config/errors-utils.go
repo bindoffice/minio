@@ -22,7 +22,7 @@ import (
 	"net"
 	"syscall"
 
-	"github.com/bindoffice/minio/pkg/color"
+	"github.com/bindoffice/bind-store/pkg/color"
 )
 
 // Err is a structure which contains all information

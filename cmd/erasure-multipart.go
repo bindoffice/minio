@@ -29,10 +29,10 @@ import (
 	"time"
 
 	"github.com/minio/minio-go/v7/pkg/set"
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/mimedb"
-	"github.com/bindoffice/minio/pkg/sync/errgroup"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/mimedb"
+	"github.com/bindoffice/bind-store/pkg/sync/errgroup"
 )
 
 func (er erasureObjects) getUploadIDDir(bucket, object, uploadID string) string {

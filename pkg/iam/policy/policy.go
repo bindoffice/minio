@@ -22,7 +22,7 @@ import (
 	"strings"
 
 	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/bindoffice/minio/pkg/bucket/policy"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy"
 )
 
 // DefaultVersion - default policy version as per AWS S3 specification.

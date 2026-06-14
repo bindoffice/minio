@@ -20,8 +20,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/madmin"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/madmin"
 )
 
 // healTask represents what to heal along with options

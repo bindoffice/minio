@@ -22,7 +22,7 @@ import (
 	"sync"
 
 	humanize "github.com/dustin/go-humanize"
-	"github.com/bindoffice/minio/pkg/sync/errgroup"
+	"github.com/bindoffice/bind-store/pkg/sync/errgroup"
 )
 
 const (

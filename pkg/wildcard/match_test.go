@@ -19,7 +19,7 @@ package wildcard_test
 import (
 	"testing"
 
-	"github.com/bindoffice/minio/pkg/wildcard"
+	"github.com/bindoffice/bind-store/pkg/wildcard"
 )
 
 // TestMatch - Tests validate the logic of wild card matching.

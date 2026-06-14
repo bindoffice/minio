@@ -23,9 +23,9 @@ import (
 
 	jwtgo "github.com/golang-jwt/jwt/v4"
 	jwtreq "github.com/golang-jwt/jwt/v4/request"
-	xjwt "github.com/bindoffice/minio/cmd/jwt"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/auth"
+	xjwt "github.com/bindoffice/bind-store/cmd/jwt"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/auth"
 )
 
 const (

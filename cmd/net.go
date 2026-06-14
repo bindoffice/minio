@@ -25,9 +25,9 @@ import (
 	"strings"
 
 	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/bindoffice/minio/cmd/config"
-	"github.com/bindoffice/minio/cmd/logger"
-	xnet "github.com/bindoffice/minio/pkg/net"
+	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 )
 
 // IPv4 addresses of local host.

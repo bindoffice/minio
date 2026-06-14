@@ -26,7 +26,7 @@ import (
 	"errors"
 	"io/ioutil"
 
-	"github.com/bindoffice/minio/pkg/env"
+	"github.com/bindoffice/bind-store/pkg/env"
 )
 
 // EnvCertPassword is the environment variable which contains the password used

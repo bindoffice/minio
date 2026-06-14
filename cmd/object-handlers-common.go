@@ -24,8 +24,8 @@ import (
 	"strconv"
 	"time"
 
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/pkg/bucket/lifecycle"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/pkg/bucket/lifecycle"
 )
 
 var (

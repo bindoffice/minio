@@ -16,7 +16,7 @@
 
 package compress
 
-import "github.com/bindoffice/minio/cmd/config"
+import "github.com/bindoffice/bind-store/cmd/config"
 
 // Help template for compress feature.
 var (

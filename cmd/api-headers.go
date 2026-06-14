@@ -27,9 +27,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bindoffice/minio/cmd/crypto"
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/pkg/bucket/lifecycle"
+	"github.com/bindoffice/bind-store/cmd/crypto"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/pkg/bucket/lifecycle"
 )
 
 // Returns a hexadecimal representation of time at the

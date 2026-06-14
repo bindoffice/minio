@@ -21,8 +21,8 @@ import (
 	"errors"
 
 	"github.com/minio/minio-go/v7/pkg/s3utils"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/sync/errgroup"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/sync/errgroup"
 )
 
 // list all errors that can be ignore in a bucket operation.

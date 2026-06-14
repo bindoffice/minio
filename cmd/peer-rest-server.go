@@ -29,11 +29,11 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/bindoffice/minio/cmd/logger"
-	b "github.com/bindoffice/minio/pkg/bucket/bandwidth"
-	"github.com/bindoffice/minio/pkg/event"
-	"github.com/bindoffice/minio/pkg/madmin"
-	trace "github.com/bindoffice/minio/pkg/trace"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	b "github.com/bindoffice/bind-store/pkg/bucket/bandwidth"
+	"github.com/bindoffice/bind-store/pkg/event"
+	"github.com/bindoffice/bind-store/pkg/madmin"
+	trace "github.com/bindoffice/bind-store/pkg/trace"
 	"github.com/tinylib/msgp/msgp"
 )
 

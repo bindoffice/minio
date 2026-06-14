@@ -23,9 +23,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bindoffice/minio/cmd/logger/message/log"
-	"github.com/bindoffice/minio/pkg/color"
-	c "github.com/bindoffice/minio/pkg/console"
+	"github.com/bindoffice/bind-store/cmd/logger/message/log"
+	"github.com/bindoffice/bind-store/pkg/color"
+	c "github.com/bindoffice/bind-store/pkg/console"
 )
 
 // Logger interface describes the methods that need to be implemented to satisfy the interface requirements.

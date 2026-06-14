@@ -17,8 +17,8 @@
 package iampolicy
 
 import (
-	"github.com/bindoffice/minio/pkg/bucket/policy/condition"
-	"github.com/bindoffice/minio/pkg/wildcard"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy/condition"
+	"github.com/bindoffice/bind-store/pkg/wildcard"
 )
 
 // Action - policy action.

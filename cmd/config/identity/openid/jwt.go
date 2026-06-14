@@ -29,11 +29,11 @@ import (
 	"time"
 
 	jwtgo "github.com/golang-jwt/jwt/v4"
-	"github.com/bindoffice/minio/cmd/config"
-	"github.com/bindoffice/minio/pkg/auth"
-	"github.com/bindoffice/minio/pkg/env"
-	iampolicy "github.com/bindoffice/minio/pkg/iam/policy"
-	xnet "github.com/bindoffice/minio/pkg/net"
+	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bind-store/pkg/auth"
+	"github.com/bindoffice/bind-store/pkg/env"
+	iampolicy "github.com/bindoffice/bind-store/pkg/iam/policy"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 )
 
 // Config - OpenID Config

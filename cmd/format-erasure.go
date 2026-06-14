@@ -28,12 +28,12 @@ import (
 	"sync"
 
 	humanize "github.com/dustin/go-humanize"
-	"github.com/bindoffice/minio/cmd/config"
-	"github.com/bindoffice/minio/cmd/config/storageclass"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/color"
-	xioutil "github.com/bindoffice/minio/pkg/ioutil"
-	"github.com/bindoffice/minio/pkg/sync/errgroup"
+	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bind-store/cmd/config/storageclass"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/color"
+	xioutil "github.com/bindoffice/bind-store/pkg/ioutil"
+	"github.com/bindoffice/bind-store/pkg/sync/errgroup"
 )
 
 const (

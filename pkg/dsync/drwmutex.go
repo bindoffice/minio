@@ -24,7 +24,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bindoffice/minio/pkg/console"
+	"github.com/bindoffice/bind-store/pkg/console"
 )
 
 // Indicator if logging is enabled.

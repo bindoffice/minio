@@ -71,7 +71,7 @@ export KRB5REALM=REALM.COM
 ## Test using MinIO Browser
 *MinIO gateway* comes with an embedded web based object browser. Point your web browser to http://127.0.0.1:9000 to ensure that your server has started successfully.
 
-![Screenshot](https://raw.githubusercontent.com/bindoffice/minio/master/docs/screenshots/minio-browser-gateway.png)
+![Screenshot](https://raw.githubusercontent.com/bindoffice/bind-store/master/docs/screenshots/minio-browser-gateway.png)
 
 ## Test using MinIO Client `mc`
 

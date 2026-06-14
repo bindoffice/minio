@@ -22,7 +22,7 @@ import (
 
 	"sync"
 
-	"github.com/bindoffice/minio/cmd/logger"
+	"github.com/bindoffice/bind-store/cmd/logger"
 )
 
 // Writes in parallel to writers

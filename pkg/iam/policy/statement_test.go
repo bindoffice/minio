@@ -22,8 +22,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/bindoffice/minio/pkg/bucket/policy"
-	"github.com/bindoffice/minio/pkg/bucket/policy/condition"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy/condition"
 )
 
 func TestStatementIsAllowed(t *testing.T) {

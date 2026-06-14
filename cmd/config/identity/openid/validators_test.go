@@ -21,7 +21,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	xnet "github.com/bindoffice/minio/pkg/net"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 )
 
 type errorValidator struct{}

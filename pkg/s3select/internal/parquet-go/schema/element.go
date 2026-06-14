@@ -21,7 +21,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/bindoffice/minio/pkg/s3select/internal/parquet-go/gen-go/parquet"
+	"github.com/bindoffice/bind-store/pkg/s3select/internal/parquet-go/gen-go/parquet"
 )
 
 var nameRegexp = regexp.MustCompile("^[a-zA-Z0-9_]+$")

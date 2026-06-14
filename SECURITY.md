@@ -2,12 +2,12 @@
 
 ## Supported Versions
 
-We always provide security updates for the [latest release](https://github.com/bindoffice/minio/releases/latest).
+We always provide security updates for the [latest release](https://github.com/bindoffice/bind-store/releases/latest).
 Whenever there is a security update you just need to upgrade to the latest version.
 
 ## Reporting a Vulnerability
 
-All security bugs in [bindoffice/minio](https://github.com/bindoffice/minio) (or other minio/* repositories)
+All security bugs in [bindoffice/bind-store](https://github.com/bindoffice/bind-store) (or other minio/* repositories)
 should be reported by email to security@min.io. Your email will be acknowledged within 48 hours,
 and you'll receive a more detailed response to your email within 72 hours indicating the next steps
 in handling your report.

@@ -23,11 +23,11 @@ import (
 	"sort"
 	"time"
 
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/color"
-	"github.com/bindoffice/minio/pkg/console"
-	"github.com/bindoffice/minio/pkg/madmin"
-	"github.com/bindoffice/minio/pkg/wildcard"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/color"
+	"github.com/bindoffice/bind-store/pkg/console"
+	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bind-store/pkg/wildcard"
 )
 
 const (

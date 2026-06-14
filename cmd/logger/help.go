@@ -17,7 +17,7 @@
 package logger
 
 import (
-	"github.com/bindoffice/minio/cmd/config"
+	"github.com/bindoffice/bind-store/cmd/config"
 )
 
 // Help template for logger http and audit

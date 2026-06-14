@@ -22,9 +22,9 @@ import (
 	"time"
 
 	humanize "github.com/dustin/go-humanize"
-	"github.com/bindoffice/minio/pkg/bucket/replication"
-	"github.com/bindoffice/minio/pkg/hash"
-	"github.com/bindoffice/minio/pkg/madmin"
+	"github.com/bindoffice/bind-store/pkg/bucket/replication"
+	"github.com/bindoffice/bind-store/pkg/hash"
+	"github.com/bindoffice/bind-store/pkg/madmin"
 )
 
 // BackendType - represents different backend types.

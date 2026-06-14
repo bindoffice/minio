@@ -29,14 +29,14 @@ import (
 
 	miniogo "github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/tags"
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/cmd/logger"
-	sse "github.com/bindoffice/minio/pkg/bucket/encryption"
-	"github.com/bindoffice/minio/pkg/bucket/lifecycle"
-	"github.com/bindoffice/minio/pkg/event"
-	"github.com/bindoffice/minio/pkg/hash"
-	"github.com/bindoffice/minio/pkg/madmin"
-	"github.com/bindoffice/minio/pkg/s3select"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	sse "github.com/bindoffice/bind-store/pkg/bucket/encryption"
+	"github.com/bindoffice/bind-store/pkg/bucket/lifecycle"
+	"github.com/bindoffice/bind-store/pkg/event"
+	"github.com/bindoffice/bind-store/pkg/hash"
+	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bind-store/pkg/s3select"
 )
 
 const (

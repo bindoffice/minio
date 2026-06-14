@@ -20,8 +20,8 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/bindoffice/minio/pkg/bucket/policy/condition"
-	"github.com/bindoffice/minio/pkg/wildcard"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy/condition"
+	"github.com/bindoffice/bind-store/pkg/wildcard"
 )
 
 // ResourceARNPrefix - resource ARN prefix as per AWS S3 specification.

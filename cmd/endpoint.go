@@ -34,12 +34,12 @@ import (
 
 	"github.com/dustin/go-humanize"
 	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/bindoffice/minio/cmd/config"
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/env"
-	"github.com/bindoffice/minio/pkg/mountinfo"
-	xnet "github.com/bindoffice/minio/pkg/net"
+	"github.com/bindoffice/bind-store/cmd/config"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/env"
+	"github.com/bindoffice/bind-store/pkg/mountinfo"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 )
 
 // EndpointType - enum for endpoint type.

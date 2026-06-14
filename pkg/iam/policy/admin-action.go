@@ -17,7 +17,7 @@
 package iampolicy
 
 import (
-	"github.com/bindoffice/minio/pkg/bucket/policy/condition"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy/condition"
 )
 
 // AdminAction - admin policy action.

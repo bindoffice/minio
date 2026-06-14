@@ -19,7 +19,7 @@ package target
 import (
 	"testing"
 
-	xnet "github.com/bindoffice/minio/pkg/net"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 	natsserver "github.com/nats-io/nats-server/v2/test"
 )
 

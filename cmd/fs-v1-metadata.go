@@ -28,10 +28,10 @@ import (
 	"time"
 
 	jsoniter "github.com/json-iterator/go"
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/lock"
-	"github.com/bindoffice/minio/pkg/mimedb"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/lock"
+	"github.com/bindoffice/bind-store/pkg/mimedb"
 )
 
 // FS format, and object metadata.

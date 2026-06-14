@@ -17,7 +17,7 @@
 package encoding
 
 import (
-	"github.com/bindoffice/minio/pkg/s3select/internal/parquet-go/common"
+	"github.com/bindoffice/bind-store/pkg/s3select/internal/parquet-go/common"
 )
 
 // Refer https://en.wikipedia.org/wiki/LEB128#Unsigned_LEB128

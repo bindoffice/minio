@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/bindoffice/minio/pkg/certs"
+	"github.com/bindoffice/bind-store/pkg/certs"
 )
 
 func TestNewServer(t *testing.T) {

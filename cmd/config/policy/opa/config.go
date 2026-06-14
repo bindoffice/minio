@@ -23,10 +23,10 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/bindoffice/minio/cmd/config"
-	"github.com/bindoffice/minio/pkg/env"
-	iampolicy "github.com/bindoffice/minio/pkg/iam/policy"
-	xnet "github.com/bindoffice/minio/pkg/net"
+	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bind-store/pkg/env"
+	iampolicy "github.com/bindoffice/bind-store/pkg/iam/policy"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 )
 
 // Env IAM OPA URL

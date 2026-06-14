@@ -20,8 +20,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/bindoffice/minio/pkg/s3select/internal/parquet-go/gen-go/parquet"
-	"github.com/bindoffice/minio/pkg/s3select/internal/parquet-go/schema"
+	"github.com/bindoffice/bind-store/pkg/s3select/internal/parquet-go/gen-go/parquet"
+	"github.com/bindoffice/bind-store/pkg/s3select/internal/parquet-go/schema"
 )
 
 func TestPopulateListOfList(t *testing.T) {

@@ -21,8 +21,8 @@ import (
 	pathutil "path"
 	"sync"
 
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/lock"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/lock"
 )
 
 // fsIOPool represents a protected list to keep track of all

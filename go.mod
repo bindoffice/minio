@@ -1,4 +1,4 @@
-module github.com/bindoffice/minio
+module github.com/bindoffice/bind-store
 
 go 1.25.11
 

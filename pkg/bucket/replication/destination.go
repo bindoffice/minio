@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/bindoffice/minio/pkg/wildcard"
+	"github.com/bindoffice/bind-store/pkg/wildcard"
 )
 
 // DestinationARNPrefix - destination ARN prefix as per AWS S3 specification.

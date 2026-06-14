@@ -31,9 +31,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/bindoffice/minio/pkg/certs"
-	"github.com/bindoffice/minio/pkg/event"
-	xnet "github.com/bindoffice/minio/pkg/net"
+	"github.com/bindoffice/bind-store/pkg/certs"
+	"github.com/bindoffice/bind-store/pkg/event"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 )
 
 // Webhook constants

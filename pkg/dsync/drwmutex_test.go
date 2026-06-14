@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/bindoffice/minio/pkg/dsync"
+	. "github.com/bindoffice/bind-store/pkg/dsync"
 )
 
 const (

@@ -24,8 +24,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/bindoffice/minio/cmd/config"
-	"github.com/bindoffice/minio/pkg/env"
+	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bind-store/pkg/env"
 )
 
 // Standard constants for all storage class

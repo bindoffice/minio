@@ -21,7 +21,7 @@ import (
 	"regexp"
 	"runtime"
 
-	"github.com/bindoffice/minio/pkg/color"
+	"github.com/bindoffice/bind-store/pkg/color"
 )
 
 var ansiRE = regexp.MustCompile("(\x1b[^m]*m)")

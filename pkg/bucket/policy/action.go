@@ -19,7 +19,7 @@ package policy
 import (
 	"encoding/json"
 
-	"github.com/bindoffice/minio/pkg/bucket/policy/condition"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy/condition"
 )
 
 // Action - policy action.

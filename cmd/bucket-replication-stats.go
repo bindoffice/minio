@@ -21,7 +21,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/bindoffice/minio/pkg/bucket/replication"
+	"github.com/bindoffice/bind-store/pkg/bucket/replication"
 )
 
 func (b *BucketReplicationStats) hasReplicationUsage() bool {

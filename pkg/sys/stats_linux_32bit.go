@@ -22,7 +22,7 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/bindoffice/minio/pkg/cgroup"
+	"github.com/bindoffice/bind-store/pkg/cgroup"
 )
 
 // Get the final system memory limit chosen by the user.

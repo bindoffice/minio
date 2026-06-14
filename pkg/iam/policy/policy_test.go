@@ -25,8 +25,8 @@ import (
 	"time"
 
 	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/bindoffice/minio/pkg/bucket/policy"
-	"github.com/bindoffice/minio/pkg/bucket/policy/condition"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy/condition"
 )
 
 func TestGetPoliciesFromClaims(t *testing.T) {

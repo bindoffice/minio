@@ -20,9 +20,9 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/bindoffice/minio/cmd/config"
-	"github.com/bindoffice/minio/pkg/env"
-	xnet "github.com/bindoffice/minio/pkg/net"
+	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bind-store/pkg/env"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 )
 
 const (

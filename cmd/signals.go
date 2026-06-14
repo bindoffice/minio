@@ -23,7 +23,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/bindoffice/minio/cmd/logger"
+	"github.com/bindoffice/bind-store/cmd/logger"
 )
 
 func handleSignals() {

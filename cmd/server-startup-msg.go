@@ -24,11 +24,11 @@ import (
 	"strings"
 
 	humanize "github.com/dustin/go-humanize"
-	"github.com/bindoffice/minio/cmd/config"
-	"github.com/bindoffice/minio/cmd/logger"
-	color "github.com/bindoffice/minio/pkg/color"
-	"github.com/bindoffice/minio/pkg/madmin"
-	xnet "github.com/bindoffice/minio/pkg/net"
+	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	color "github.com/bindoffice/bind-store/pkg/color"
+	"github.com/bindoffice/bind-store/pkg/madmin"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 )
 
 // Documentation links, these are part of message printing code.

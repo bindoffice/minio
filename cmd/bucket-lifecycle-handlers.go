@@ -22,10 +22,10 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/bucket/lifecycle"
-	"github.com/bindoffice/minio/pkg/bucket/policy"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/bucket/lifecycle"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy"
 )
 
 const (

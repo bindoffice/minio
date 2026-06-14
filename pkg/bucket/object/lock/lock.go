@@ -27,8 +27,8 @@ import (
 	"time"
 
 	"github.com/beevik/ntp"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/env"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/env"
 )
 
 // RetMode - object retention mode.

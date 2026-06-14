@@ -23,8 +23,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/bindoffice/minio/cmd/crypto"
-	xhttp "github.com/bindoffice/minio/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/crypto"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
 )
 
 // Tests getRedirectLocation function for all its criteria.

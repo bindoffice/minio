@@ -36,11 +36,11 @@ import (
 
 	jwtreq "github.com/golang-jwt/jwt/v4/request"
 	"github.com/gorilla/mux"
-	"github.com/bindoffice/minio/cmd/config"
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	xjwt "github.com/bindoffice/minio/cmd/jwt"
-	"github.com/bindoffice/minio/cmd/logger"
-	xnet "github.com/bindoffice/minio/pkg/net"
+	"github.com/bindoffice/bind-store/cmd/config"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	xjwt "github.com/bindoffice/bind-store/cmd/jwt"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	xnet "github.com/bindoffice/bind-store/pkg/net"
 )
 
 var errDiskStale = errors.New("disk stale")

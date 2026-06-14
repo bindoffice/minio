@@ -19,7 +19,7 @@ package data
 import (
 	"fmt"
 
-	"github.com/bindoffice/minio/pkg/s3select/internal/parquet-go/gen-go/parquet"
+	"github.com/bindoffice/bind-store/pkg/s3select/internal/parquet-go/gen-go/parquet"
 	"github.com/tidwall/gjson"
 )
 

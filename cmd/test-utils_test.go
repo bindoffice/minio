@@ -58,14 +58,14 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/minio/minio-go/v7/pkg/s3utils"
 	"github.com/minio/minio-go/v7/pkg/signer"
-	"github.com/bindoffice/minio/cmd/config"
-	"github.com/bindoffice/minio/cmd/crypto"
-	xhttp "github.com/bindoffice/minio/cmd/http"
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/cmd/rest"
-	"github.com/bindoffice/minio/pkg/auth"
-	"github.com/bindoffice/minio/pkg/bucket/policy"
-	"github.com/bindoffice/minio/pkg/hash"
+	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bind-store/cmd/crypto"
+	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/cmd/rest"
+	"github.com/bindoffice/bind-store/pkg/auth"
+	"github.com/bindoffice/bind-store/pkg/bucket/policy"
+	"github.com/bindoffice/bind-store/pkg/hash"
 )
 
 // TestMain to set up global env.
@@ -691,7 +691,7 @@ func newTestStreamingRequest(method, urlStr string, dataLength, chunkSize int64,
 
 	if body == nil {
 		// this is added to avoid panic during ioutil.ReadAll(req.Body).
-		// th stack trace can be found here  https://github.com/bindoffice/minio/pull/2074 .
+		// th stack trace can be found here  https://github.com/bindoffice/bind-store/pull/2074 .
 		// This is very similar to https://github.com/golang/go/issues/7527.
 		req.Body = ioutil.NopCloser(bytes.NewReader([]byte("")))
 	}
@@ -1190,7 +1190,7 @@ func newWebRPCRequest(methodRPC, authorization string, body io.ReadSeeker) (*htt
 		req.Body = ioutil.NopCloser(body)
 	} else {
 		// this is added to avoid panic during ioutil.ReadAll(req.Body).
-		// th stack trace can be found here  https://github.com/bindoffice/minio/pull/2074 .
+		// th stack trace can be found here  https://github.com/bindoffice/bind-store/pull/2074 .
 		// This is very similar to https://github.com/golang/go/issues/7527.
 		req.Body = ioutil.NopCloser(bytes.NewReader([]byte("")))
 	}

@@ -21,8 +21,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bindoffice/minio/pkg/disk"
-	trace "github.com/bindoffice/minio/pkg/trace"
+	"github.com/bindoffice/bind-store/pkg/disk"
+	trace "github.com/bindoffice/bind-store/pkg/trace"
 )
 
 //go:generate stringer -type=osMetric -trimprefix=osMetric $GOFILE

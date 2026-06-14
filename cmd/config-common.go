@@ -23,7 +23,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/bindoffice/minio/pkg/hash"
+	"github.com/bindoffice/bind-store/pkg/hash"
 )
 
 var errConfigNotFound = errors.New("config file not found")

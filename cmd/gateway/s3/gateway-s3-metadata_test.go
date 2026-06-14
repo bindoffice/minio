@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"testing"
 
-	minio "github.com/bindoffice/minio/cmd"
+	minio "github.com/bindoffice/bind-store/cmd"
 )
 
 // Tests for GW metadata format validity.

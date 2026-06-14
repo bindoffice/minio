@@ -16,7 +16,7 @@
 
 package etcd
 
-import "github.com/bindoffice/minio/cmd/config"
+import "github.com/bindoffice/bind-store/cmd/config"
 
 // etcd config documented in default config
 var (

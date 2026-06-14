@@ -22,7 +22,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/bindoffice/minio/cmd/config"
+	"github.com/bindoffice/bind-store/cmd/config"
 )
 
 // Test if config v1 is purged

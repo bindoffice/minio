@@ -24,8 +24,8 @@ import (
 	"hash"
 	"io"
 
-	"github.com/bindoffice/minio/cmd/logger"
-	"github.com/bindoffice/minio/pkg/ioutil"
+	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bind-store/pkg/ioutil"
 )
 
 type errHashMismatch struct {

@@ -20,7 +20,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/bindoffice/minio/pkg/sync/errgroup"
+	"github.com/bindoffice/bind-store/pkg/sync/errgroup"
 )
 
 func (er erasureObjects) getLocalDisks() (localDisks []StorageAPI) {

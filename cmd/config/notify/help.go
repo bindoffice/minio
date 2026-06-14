@@ -17,8 +17,8 @@
 package notify
 
 import (
-	"github.com/bindoffice/minio/cmd/config"
-	"github.com/bindoffice/minio/pkg/event/target"
+	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bind-store/pkg/event/target"
 )
 
 const (
