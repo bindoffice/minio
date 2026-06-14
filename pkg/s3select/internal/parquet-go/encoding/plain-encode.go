@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/bindoffice/bind-store/pkg/s3select/internal/parquet-go/gen-go/parquet"
+	"github.com/bindoffice/bindstore/pkg/s3select/internal/parquet-go/gen-go/parquet"
 )
 
 func plainEncodeBools(bs []bool) []byte {

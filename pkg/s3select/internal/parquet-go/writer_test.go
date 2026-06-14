@@ -20,9 +20,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/s3select/internal/parquet-go/data"
-	"github.com/bindoffice/bind-store/pkg/s3select/internal/parquet-go/gen-go/parquet"
-	"github.com/bindoffice/bind-store/pkg/s3select/internal/parquet-go/schema"
+	"github.com/bindoffice/bindstore/pkg/s3select/internal/parquet-go/data"
+	"github.com/bindoffice/bindstore/pkg/s3select/internal/parquet-go/gen-go/parquet"
+	"github.com/bindoffice/bindstore/pkg/s3select/internal/parquet-go/schema"
 )
 
 func TestWriterWrite(t *testing.T) {

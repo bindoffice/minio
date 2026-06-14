@@ -28,9 +28,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/dsync"
-	"github.com/bindoffice/bind-store/pkg/lsync"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/dsync"
+	"github.com/bindoffice/bindstore/pkg/lsync"
 )
 
 // local lock servers
@@ -272,7 +272,7 @@ func getSource(n int) string {
 	if ok {
 		filename = pathutil.Base(filename)
 		funcName = strings.TrimPrefix(runtime.FuncForPC(pc).Name(),
-			"github.com/bindoffice/bind-store/cmd.")
+			"github.com/bindoffice/bindstore/cmd.")
 	} else {
 		filename = "<unknown>"
 		lineNum = 0

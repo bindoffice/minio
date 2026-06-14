@@ -24,7 +24,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 func main() {

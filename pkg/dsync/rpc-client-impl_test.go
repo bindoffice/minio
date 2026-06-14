@@ -21,7 +21,7 @@ import (
 	"net/rpc"
 	"sync"
 
-	. "github.com/bindoffice/bind-store/pkg/dsync"
+	. "github.com/bindoffice/bindstore/pkg/dsync"
 )
 
 // ReconnectRPCClient is a wrapper type for rpc.Client which provides reconnect on first failure.

@@ -23,7 +23,7 @@ import (
 	"io"
 
 	"github.com/klauspost/reedsolomon"
-	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bindstore/cmd/logger"
 )
 
 // getDataBlockLen - get length of data blocks from encoded blocks.

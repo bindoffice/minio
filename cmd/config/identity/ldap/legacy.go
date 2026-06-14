@@ -16,7 +16,7 @@
 
 package ldap
 
-import "github.com/bindoffice/bind-store/cmd/config"
+import "github.com/bindoffice/bindstore/cmd/config"
 
 // SetIdentityLDAP - One time migration code needed, for migrating from older config to new for LDAPConfig.
 func SetIdentityLDAP(s config.Config, ldapArgs Config) {

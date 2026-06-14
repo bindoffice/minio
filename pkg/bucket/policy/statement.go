@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/bindoffice/bind-store/pkg/bucket/policy/condition"
+	"github.com/bindoffice/bindstore/pkg/bucket/policy/condition"
 )
 
 // Statement - policy statement.

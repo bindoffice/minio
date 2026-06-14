@@ -23,8 +23,8 @@ import (
 	"encoding/base64"
 	"net/http"
 
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	"github.com/bindoffice/bind-store/cmd/logger"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	"github.com/bindoffice/bindstore/cmd/logger"
 )
 
 type ssec struct{}

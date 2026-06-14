@@ -25,7 +25,7 @@ import (
 	"github.com/klauspost/compress/gzip"
 	"github.com/klauspost/compress/snappy"
 	"github.com/klauspost/compress/zstd"
-	"github.com/bindoffice/bind-store/pkg/s3select/internal/parquet-go/gen-go/parquet"
+	"github.com/bindoffice/bindstore/pkg/s3select/internal/parquet-go/gen-go/parquet"
 	"github.com/pierrec/lz4"
 )
 

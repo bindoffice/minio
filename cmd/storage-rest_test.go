@@ -25,8 +25,8 @@ import (
 	"testing"
 
 	"github.com/gorilla/mux"
-	"github.com/bindoffice/bind-store/cmd/config"
-	xnet "github.com/bindoffice/bind-store/pkg/net"
+	"github.com/bindoffice/bindstore/cmd/config"
+	xnet "github.com/bindoffice/bindstore/pkg/net"
 )
 
 ///////////////////////////////////////////////////////////////////////////////

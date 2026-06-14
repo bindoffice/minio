@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 // validates functionality provided to find most common

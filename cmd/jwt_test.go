@@ -21,8 +21,8 @@ import (
 	"os"
 	"testing"
 
-	xjwt "github.com/bindoffice/bind-store/cmd/jwt"
-	"github.com/bindoffice/bind-store/pkg/auth"
+	xjwt "github.com/bindoffice/bindstore/cmd/jwt"
+	"github.com/bindoffice/bindstore/pkg/auth"
 )
 
 func testAuthenticate(authType string, t *testing.T) {

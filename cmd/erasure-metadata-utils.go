@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"hash/crc32"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/sync/errgroup"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/sync/errgroup"
 )
 
 // Returns number of errors that occurred the most (incl. nil) and the

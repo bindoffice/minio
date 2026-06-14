@@ -14,7 +14,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/bindoffice/bind-store/pkg/rpc"
+	"github.com/bindoffice/bindstore/pkg/rpc"
 )
 
 var null = json.RawMessage([]byte("null"))

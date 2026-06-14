@@ -28,7 +28,7 @@ import (
 	"time"
 
 	jwtgo "github.com/golang-jwt/jwt/v4"
-	"github.com/bindoffice/bind-store/cmd/jwt"
+	"github.com/bindoffice/bindstore/cmd/jwt"
 )
 
 const (

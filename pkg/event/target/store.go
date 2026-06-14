@@ -24,7 +24,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/bindoffice/bind-store/pkg/event"
+	"github.com/bindoffice/bindstore/pkg/event"
 )
 
 const retryInterval = 3 * time.Second

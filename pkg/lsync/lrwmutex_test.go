@@ -28,7 +28,7 @@ import (
 
 	"runtime"
 
-	. "github.com/bindoffice/bind-store/pkg/lsync"
+	. "github.com/bindoffice/bindstore/pkg/lsync"
 )
 
 func testSimpleWriteLock(t *testing.T, duration time.Duration) (locked bool) {

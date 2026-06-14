@@ -5,14 +5,14 @@ sudo sysctl net.ipv6.conf.wlp59s0.disable_ipv6=1
 release=$(git describe --abbrev=0 --tags)
 
 docker buildx build --push --no-cache \
-       --build-arg RELEASE="${release}" -t "bindoffice/bind-store:latest" \
+       --build-arg RELEASE="${release}" -t "bindoffice/bindstore:latest" \
        --platform=linux/arm64,linux/amd64,linux/ppc64le,linux/s390x \
        -f Dockerfile.release .
 
 docker buildx prune -f
 
 docker buildx build --push --no-cache \
-       --build-arg RELEASE="${release}" -t "bindoffice/bind-store:${release}" \
+       --build-arg RELEASE="${release}" -t "bindoffice/bindstore:${release}" \
        --platform=linux/arm64,linux/amd64,linux/ppc64le,linux/s390x \
        -f Dockerfile.release .
 

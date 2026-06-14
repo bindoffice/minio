@@ -23,8 +23,8 @@ import (
 	"io"
 
 	"github.com/bcicen/jstream"
-	csv "github.com/bindoffice/bind-store/pkg/csvparser"
-	"github.com/bindoffice/bind-store/pkg/s3select/sql"
+	csv "github.com/bindoffice/bindstore/pkg/csvparser"
+	"github.com/bindoffice/bindstore/pkg/s3select/sql"
 )
 
 // Record - is a CSV record.

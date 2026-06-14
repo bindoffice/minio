@@ -31,8 +31,8 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/bindoffice/bind-store/cmd/config"
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	"github.com/bindoffice/bindstore/cmd/config"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
 )
 
 var (

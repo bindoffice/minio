@@ -24,17 +24,17 @@ import (
 	"sync"
 
 	"github.com/minio/minio-go/v7/pkg/tags"
-	"github.com/bindoffice/bind-store/cmd/crypto"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	bucketsse "github.com/bindoffice/bind-store/pkg/bucket/encryption"
-	"github.com/bindoffice/bind-store/pkg/bucket/lifecycle"
-	objectlock "github.com/bindoffice/bind-store/pkg/bucket/object/lock"
-	"github.com/bindoffice/bind-store/pkg/bucket/policy"
-	"github.com/bindoffice/bind-store/pkg/bucket/replication"
-	"github.com/bindoffice/bind-store/pkg/bucket/versioning"
-	"github.com/bindoffice/bind-store/pkg/event"
-	"github.com/bindoffice/bind-store/pkg/madmin"
-	"github.com/bindoffice/bind-store/pkg/sync/errgroup"
+	"github.com/bindoffice/bindstore/cmd/crypto"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	bucketsse "github.com/bindoffice/bindstore/pkg/bucket/encryption"
+	"github.com/bindoffice/bindstore/pkg/bucket/lifecycle"
+	objectlock "github.com/bindoffice/bindstore/pkg/bucket/object/lock"
+	"github.com/bindoffice/bindstore/pkg/bucket/policy"
+	"github.com/bindoffice/bindstore/pkg/bucket/replication"
+	"github.com/bindoffice/bindstore/pkg/bucket/versioning"
+	"github.com/bindoffice/bindstore/pkg/event"
+	"github.com/bindoffice/bindstore/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/sync/errgroup"
 )
 
 // BucketMetadataSys captures all bucket metadata for a given cluster.

@@ -30,11 +30,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/bindoffice/bind-store/pkg/s3select/csv"
-	"github.com/bindoffice/bind-store/pkg/s3select/json"
-	"github.com/bindoffice/bind-store/pkg/s3select/parquet"
-	"github.com/bindoffice/bind-store/pkg/s3select/simdj"
-	"github.com/bindoffice/bind-store/pkg/s3select/sql"
+	"github.com/bindoffice/bindstore/pkg/s3select/csv"
+	"github.com/bindoffice/bindstore/pkg/s3select/json"
+	"github.com/bindoffice/bindstore/pkg/s3select/parquet"
+	"github.com/bindoffice/bindstore/pkg/s3select/simdj"
+	"github.com/bindoffice/bindstore/pkg/s3select/sql"
 	"github.com/minio/simdjson-go"
 )
 

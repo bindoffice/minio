@@ -26,7 +26,7 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/bindoffice/bind-store/pkg/dsync"
+	"github.com/bindoffice/bindstore/pkg/dsync"
 )
 
 const (

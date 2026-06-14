@@ -23,7 +23,7 @@ import (
 	"net/http"
 	"strings"
 
-	color "github.com/bindoffice/bind-store/pkg/color"
+	color "github.com/bindoffice/bindstore/pkg/color"
 )
 
 // Extra ASN1 OIDs that we may need to handle

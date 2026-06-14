@@ -17,7 +17,7 @@
 
 package config
 
-import "github.com/bindoffice/bind-store/pkg/auth"
+import "github.com/bindoffice/bindstore/pkg/auth"
 
 //// One time migration code section
 

@@ -24,7 +24,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/bindoffice/bind-store/pkg/bandwidth"
+	"github.com/bindoffice/bindstore/pkg/bandwidth"
 )
 
 // Report includes the bandwidth report or the error encountered.

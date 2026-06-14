@@ -26,8 +26,8 @@ import (
 	"syscall"
 	"testing"
 
-	minio "github.com/bindoffice/bind-store/cmd"
-	_ "github.com/bindoffice/bind-store/cmd/gateway"
+	minio "github.com/bindoffice/bindstore/cmd"
+	_ "github.com/bindoffice/bindstore/cmd/gateway"
 )
 
 // TestRunMain takes arguments from APP_ARGS env variable and calls minio.Main(args)

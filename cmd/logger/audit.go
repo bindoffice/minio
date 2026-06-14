@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/bindoffice/bind-store/cmd/logger/message/audit"
+	"github.com/bindoffice/bindstore/cmd/logger/message/audit"
 )
 
 // ResponseWriter - is a wrapper to trap the http response status code.

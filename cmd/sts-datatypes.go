@@ -19,7 +19,7 @@ package cmd
 import (
 	"encoding/xml"
 
-	"github.com/bindoffice/bind-store/pkg/auth"
+	"github.com/bindoffice/bindstore/pkg/auth"
 )
 
 // AssumedRoleUser - The identifiers for the temporary security credentials that

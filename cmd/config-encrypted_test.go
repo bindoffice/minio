@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/auth"
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/auth"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 func TestDecryptData(t *testing.T) {

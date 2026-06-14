@@ -25,10 +25,10 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/bindoffice/bind-store/pkg/disk"
-	"github.com/bindoffice/bind-store/pkg/net"
+	"github.com/bindoffice/bindstore/pkg/disk"
+	"github.com/bindoffice/bindstore/pkg/net"
 
-	smart "github.com/bindoffice/bind-store/pkg/smart"
+	smart "github.com/bindoffice/bindstore/pkg/smart"
 	"github.com/shirou/gopsutil/v3/cpu"
 	diskhw "github.com/shirou/gopsutil/v3/disk"
 	"github.com/shirou/gopsutil/v3/host"

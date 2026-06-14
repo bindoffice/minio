@@ -28,8 +28,8 @@ import (
 	"time"
 
 	"github.com/gomodule/redigo/redis"
-	"github.com/bindoffice/bind-store/pkg/event"
-	xnet "github.com/bindoffice/bind-store/pkg/net"
+	"github.com/bindoffice/bindstore/pkg/event"
+	xnet "github.com/bindoffice/bindstore/pkg/net"
 )
 
 // Redis constants

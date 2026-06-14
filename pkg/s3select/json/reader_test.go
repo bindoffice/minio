@@ -24,7 +24,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/s3select/sql"
+	"github.com/bindoffice/bindstore/pkg/s3select/sql"
 )
 
 func TestNewReader(t *testing.T) {

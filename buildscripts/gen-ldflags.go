@@ -28,12 +28,12 @@ import (
 
 func genLDFlags(version string) string {
 	ldflagsStr := "-s -w"
-	ldflagsStr += " -X github.com/bindoffice/bind-store/cmd.Version=" + version
-	ldflagsStr += " -X github.com/bindoffice/bind-store/cmd.ReleaseTag=" + releaseTag(version)
-	ldflagsStr += " -X github.com/bindoffice/bind-store/cmd.CommitID=" + commitID()
-	ldflagsStr += " -X github.com/bindoffice/bind-store/cmd.ShortCommitID=" + commitID()[:12]
-	ldflagsStr += " -X github.com/bindoffice/bind-store/cmd.GOPATH=" + os.Getenv("GOPATH")
-	ldflagsStr += " -X github.com/bindoffice/bind-store/cmd.GOROOT=" + os.Getenv("GOROOT")
+	ldflagsStr += " -X github.com/bindoffice/bindstore/cmd.Version=" + version
+	ldflagsStr += " -X github.com/bindoffice/bindstore/cmd.ReleaseTag=" + releaseTag(version)
+	ldflagsStr += " -X github.com/bindoffice/bindstore/cmd.CommitID=" + commitID()
+	ldflagsStr += " -X github.com/bindoffice/bindstore/cmd.ShortCommitID=" + commitID()[:12]
+	ldflagsStr += " -X github.com/bindoffice/bindstore/cmd.GOPATH=" + os.Getenv("GOPATH")
+	ldflagsStr += " -X github.com/bindoffice/bindstore/cmd.GOROOT=" + os.Getenv("GOROOT")
 	return ldflagsStr
 }
 

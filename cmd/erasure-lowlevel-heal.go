@@ -20,7 +20,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bindstore/cmd/logger"
 )
 
 // Heal heals the shard files on non-nil writers. Note that the quorum passed is 1

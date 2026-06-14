@@ -19,8 +19,8 @@ package encoding
 import (
 	"fmt"
 
-	"github.com/bindoffice/bind-store/pkg/s3select/internal/parquet-go/common"
-	"github.com/bindoffice/bind-store/pkg/s3select/internal/parquet-go/gen-go/parquet"
+	"github.com/bindoffice/bindstore/pkg/s3select/internal/parquet-go/common"
+	"github.com/bindoffice/bindstore/pkg/s3select/internal/parquet-go/gen-go/parquet"
 )
 
 const (

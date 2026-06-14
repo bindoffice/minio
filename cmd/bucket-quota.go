@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/event"
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/event"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 // BucketQuotaSys - map of bucket and quota configuration.

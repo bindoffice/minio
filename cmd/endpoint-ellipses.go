@@ -23,9 +23,9 @@ import (
 	"strings"
 
 	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/bindoffice/bind-store/cmd/config"
-	"github.com/bindoffice/bind-store/pkg/ellipses"
-	"github.com/bindoffice/bind-store/pkg/env"
+	"github.com/bindoffice/bindstore/cmd/config"
+	"github.com/bindoffice/bindstore/pkg/ellipses"
+	"github.com/bindoffice/bindstore/pkg/env"
 )
 
 // This file implements and supports ellipses pattern for

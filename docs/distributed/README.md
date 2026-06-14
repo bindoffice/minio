@@ -8,7 +8,7 @@ MinIO in distributed mode can help you setup a highly-available storage system w
 
 ### Data protection
 
-Distributed MinIO provides protection against multiple node/drive failures and [bit rot](https://github.com/bindoffice/bind-store/blob/master/docs/erasure/README.md#what-is-bit-rot-protection) using [erasure code](https://docs.min.io/docs/minio-erasure-code-quickstart-guide). As the minimum disks required for distributed MinIO is 4 (same as minimum disks required for erasure coding), erasure code automatically kicks in as you launch distributed MinIO.
+Distributed MinIO provides protection against multiple node/drive failures and [bit rot](https://github.com/bindoffice/bindstore/blob/master/docs/erasure/README.md#what-is-bit-rot-protection) using [erasure code](https://docs.min.io/docs/minio-erasure-code-quickstart-guide). As the minimum disks required for distributed MinIO is 4 (same as minimum disks required for erasure coding), erasure code automatically kicks in as you launch distributed MinIO.
 
 ### High availability
 
@@ -16,7 +16,7 @@ A stand-alone MinIO server would go down if the server hosting the disks goes of
 
 For example, an 16-server distributed setup with 200 disks per node would continue serving files, up to 4 servers can be offline in default configuration i.e around 800 disks down MinIO would continue to read and write objects.
 
-Refer to sizing guide for more understanding on default values chosen depending on your erasure stripe size [here](https://github.com/bindoffice/bind-store/blob/master/docs/distributed/SIZING.md). Parity settings can be changed using [storage classes](https://github.com/bindoffice/bind-store/tree/master/docs/erasure/storage-class).
+Refer to sizing guide for more understanding on default values chosen depending on your erasure stripe size [here](https://github.com/bindoffice/bindstore/blob/master/docs/distributed/SIZING.md). Parity settings can be changed using [storage classes](https://github.com/bindoffice/bindstore/tree/master/docs/erasure/storage-class).
 
 ### Consistency Guarantees
 
@@ -49,7 +49,7 @@ __NOTE:__
 
 Example 1: Start distributed MinIO instance on n nodes with m drives each mounted at `/export1` to `/exportm` (pictured below), by running this command on all the n nodes:
 
-![Distributed MinIO, n nodes with m drives each](https://github.com/bindoffice/bind-store/blob/master/docs/screenshots/Architecture-diagram_distributed_nm.png?raw=true)
+![Distributed MinIO, n nodes with m drives each](https://github.com/bindoffice/bindstore/blob/master/docs/screenshots/Architecture-diagram_distributed_nm.png?raw=true)
 
 #### GNU/Linux and macOS
 

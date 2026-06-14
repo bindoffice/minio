@@ -24,7 +24,7 @@ import (
 	"path"
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/lock"
+	"github.com/bindoffice/bindstore/pkg/lock"
 )
 
 func TestFSRenameFile(t *testing.T) {

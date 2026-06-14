@@ -21,8 +21,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bindoffice/bind-store/cmd/config"
-	"github.com/bindoffice/bind-store/pkg/event/target"
+	"github.com/bindoffice/bindstore/cmd/config"
+	"github.com/bindoffice/bindstore/pkg/event/target"
 )
 
 // SetNotifyKafka - helper for config migration from older config.

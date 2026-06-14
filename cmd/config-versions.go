@@ -19,19 +19,19 @@ package cmd
 import (
 	"sync"
 
-	"github.com/bindoffice/bind-store/cmd/config"
-	"github.com/bindoffice/bind-store/cmd/config/cache"
-	"github.com/bindoffice/bind-store/cmd/config/compress"
-	xldap "github.com/bindoffice/bind-store/cmd/config/identity/ldap"
-	"github.com/bindoffice/bind-store/cmd/config/identity/openid"
-	"github.com/bindoffice/bind-store/cmd/config/notify"
-	"github.com/bindoffice/bind-store/cmd/config/policy/opa"
-	"github.com/bindoffice/bind-store/cmd/config/storageclass"
-	"github.com/bindoffice/bind-store/cmd/crypto"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/auth"
-	"github.com/bindoffice/bind-store/pkg/event/target"
-	"github.com/bindoffice/bind-store/pkg/quick"
+	"github.com/bindoffice/bindstore/cmd/config"
+	"github.com/bindoffice/bindstore/cmd/config/cache"
+	"github.com/bindoffice/bindstore/cmd/config/compress"
+	xldap "github.com/bindoffice/bindstore/cmd/config/identity/ldap"
+	"github.com/bindoffice/bindstore/cmd/config/identity/openid"
+	"github.com/bindoffice/bindstore/cmd/config/notify"
+	"github.com/bindoffice/bindstore/cmd/config/policy/opa"
+	"github.com/bindoffice/bindstore/cmd/config/storageclass"
+	"github.com/bindoffice/bindstore/cmd/crypto"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/auth"
+	"github.com/bindoffice/bindstore/pkg/event/target"
+	"github.com/bindoffice/bindstore/pkg/quick"
 )
 
 /////////////////// Config V1 ///////////////////

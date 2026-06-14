@@ -16,7 +16,7 @@
 
 package storageclass
 
-import "github.com/bindoffice/bind-store/cmd/config"
+import "github.com/bindoffice/bindstore/cmd/config"
 
 // Help template for storageclass feature.
 var (

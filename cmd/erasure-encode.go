@@ -22,7 +22,7 @@ import (
 
 	"sync"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bindstore/cmd/logger"
 )
 
 // Writes in parallel to writers

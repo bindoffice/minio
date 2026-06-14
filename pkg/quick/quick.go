@@ -27,7 +27,7 @@ import (
 	"sync"
 
 	"github.com/fatih/structs"
-	"github.com/bindoffice/bind-store/pkg/safe"
+	"github.com/bindoffice/bindstore/pkg/safe"
 	etcd "go.etcd.io/etcd/client/v3"
 )
 

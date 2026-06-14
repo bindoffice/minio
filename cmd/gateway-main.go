@@ -28,11 +28,11 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/minio/cli"
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/pkg/certs"
-	"github.com/bindoffice/bind-store/pkg/color"
-	"github.com/bindoffice/bind-store/pkg/env"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/pkg/certs"
+	"github.com/bindoffice/bindstore/pkg/color"
+	"github.com/bindoffice/bindstore/pkg/env"
 )
 
 var (

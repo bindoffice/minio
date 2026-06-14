@@ -1,11 +1,11 @@
-project_name: bind-store
+project_name: bindstore
 
 release:
    name_template: "Version {{.Version}}"
    disable: true
    github:
     owner: bindoffice
-    name: bind-store
+    name: bindstore
 
 env:
   - CGO_ENABLED=0
@@ -67,7 +67,7 @@ builds:
       - -trimpath
 
     ldflags:
-      - "-s -w -X github.com/bindoffice/bind-store/cmd.Version={{.Version}} -X github.com/bindoffice/bind-store/cmd.ReleaseTag={{.Tag}} -X github.com/bindoffice/bind-store/cmd.CommitID={{.FullCommit}} -X github.com/bindoffice/bind-store/cmd.ShortCommitID={{.ShortCommit}}"
+      - "-s -w -X github.com/bindoffice/bindstore/cmd.Version={{.Version}} -X github.com/bindoffice/bindstore/cmd.ReleaseTag={{.Tag}} -X github.com/bindoffice/bindstore/cmd.CommitID={{.FullCommit}} -X github.com/bindoffice/bindstore/cmd.ShortCommitID={{.ShortCommit}}"
 
 archives:
   -
@@ -76,12 +76,12 @@ archives:
 
 nfpms:
   -
-    id: bind-store
-    package_name: bind-store
+    id: bindstore
+    package_name: bindstore
     vendor: BindOffice
-    homepage: https://github.com/bindoffice/bind-store
+    homepage: https://github.com/bindoffice/bindstore
     maintainer: dev@bindoffice.com
-    description: bind-store is a High Performance Object Storage released under Apache License v2.0. It is API compatible with Amazon S3 cloud storage service.
+    description: bindstore is a High Performance Object Storage released under Apache License v2.0. It is API compatible with Amazon S3 cloud storage service.
     license: Apache 2.0
     bindir: /usr/bin
     formats:
@@ -93,10 +93,10 @@ nfpms:
         replacements:
           arm: armv7
         files:
-          "NOTICE": "/usr/share/bind-store/NOTICE"
-          "CREDITS": "/usr/share/bind-store/CREDITS"
-          "LICENSE": "/usr/share/bind-store/LICENSE"
-          "README.md": "/usr/share/bind-store/README.md"
+          "NOTICE": "/usr/share/bindstore/NOTICE"
+          "CREDITS": "/usr/share/bindstore/CREDITS"
+          "LICENSE": "/usr/share/bindstore/LICENSE"
+          "README.md": "/usr/share/bindstore/README.md"
       rpm:
         file_name_template: "{{ .Binary }}-release/rpms/{{ .ProjectName }}-{{ .Version }}.{{ .Arch }}"
         replacements:
@@ -104,10 +104,10 @@ nfpms:
           arm64: aarch64
           arm: armv7
         files:
-          "NOTICE": "/usr/share/bind-store/NOTICE"
-          "CREDITS": "/usr/share/bind-store/CREDITS"
-          "LICENSE": "/usr/share/bind-store/LICENSE"
-          "README.md": "/usr/share/bind-store/README.md"
+          "NOTICE": "/usr/share/bindstore/NOTICE"
+          "CREDITS": "/usr/share/bindstore/CREDITS"
+          "LICENSE": "/usr/share/bindstore/LICENSE"
+          "README.md": "/usr/share/bindstore/README.md"
 
 checksum:
   algorithm: sha256
@@ -118,7 +118,7 @@ signs:
     cmd: "sh"
     args:
       - '-c'
-      - 'minisign -s /media/${USER}/bind-store/minisign.key -qQSm ${artifact} < /media/${USER}/bind-store/minisign-passphrase'
+      - 'minisign -s /media/${USER}/bindstore/minisign.key -qQSm ${artifact} < /media/${USER}/bindstore/minisign-passphrase'
     artifacts: all
 
 changelog:
@@ -133,22 +133,22 @@ dockers:
     goarch: amd64
     dockerfile: Dockerfile.release
     image_templates:
-      - bindoffice/bind-store:{{ .Tag }}
-      - bindoffice/bind-store:latest
+      - bindoffice/bindstore:{{ .Tag }}
+      - bindoffice/bindstore:latest
 
   -
     goos: linux
     goarch: ppc64le
     dockerfile: Dockerfile.ppc64le.release
     image_templates:
-      - bindoffice/bind-store:{{ .Tag }}-ppc64le
+      - bindoffice/bindstore:{{ .Tag }}-ppc64le
 
   -
     goos: linux
     goarch: s390x
     dockerfile: Dockerfile.s390x.release
     image_templates:
-      - bindoffice/bind-store:{{ .Tag }}-s390x
+      - bindoffice/bindstore:{{ .Tag }}-s390x
 
   -
     goos: linux
@@ -156,7 +156,7 @@ dockers:
     goarm: ''
     dockerfile: Dockerfile.arm64.release
     image_templates:
-      - bindoffice/bind-store:{{ .Tag }}-arm64
+      - bindoffice/bindstore:{{ .Tag }}-arm64
 
   -
     goos: linux
@@ -164,4 +164,4 @@ dockers:
     goarm: '7'
     dockerfile: Dockerfile.arm.release
     image_templates:
-      - bindoffice/bind-store:{{ .Tag }}-arm
+      - bindoffice/bindstore:{{ .Tag }}-arm

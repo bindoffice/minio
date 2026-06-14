@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bindoffice/bind-store/pkg/color"
+	"github.com/bindoffice/bindstore/pkg/color"
 )
 
 // Tests update notifier string builder.

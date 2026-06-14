@@ -26,9 +26,9 @@ import (
 	"testing"
 
 	"github.com/klauspost/compress/s2"
-	"github.com/bindoffice/bind-store/cmd/config/compress"
-	"github.com/bindoffice/bind-store/cmd/crypto"
-	"github.com/bindoffice/bind-store/pkg/trie"
+	"github.com/bindoffice/bindstore/cmd/config/compress"
+	"github.com/bindoffice/bindstore/cmd/crypto"
+	"github.com/bindoffice/bindstore/pkg/trie"
 )
 
 // Tests validate bucket name.

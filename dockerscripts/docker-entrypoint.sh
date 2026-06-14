@@ -15,10 +15,10 @@
 # limitations under the License.
 #
 
-# If command starts with an option, prepend bind-store.
-if [ "${1}" != "bind-store" ]; then
+# If command starts with an option, prepend bindstore.
+if [ "${1}" != "bindstore" ]; then
     if [ -n "${1}" ]; then
-        set -- bind-store "$@"
+        set -- bindstore "$@"
     fi
 fi
 

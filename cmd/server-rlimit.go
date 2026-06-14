@@ -19,7 +19,7 @@ package cmd
 import (
 	"runtime/debug"
 
-	"github.com/bindoffice/bind-store/pkg/sys"
+	"github.com/bindoffice/bindstore/pkg/sys"
 )
 
 func setMaxResources() (err error) {

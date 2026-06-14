@@ -28,7 +28,7 @@ import (
 	"testing"
 
 	humanize "github.com/dustin/go-humanize"
-	"github.com/bindoffice/bind-store/pkg/hash"
+	"github.com/bindoffice/bindstore/pkg/hash"
 )
 
 func md5Header(data []byte) map[string]string {

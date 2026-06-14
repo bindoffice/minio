@@ -21,8 +21,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/bindoffice/bind-store/pkg/bucket/policy/condition"
-	"github.com/bindoffice/bind-store/pkg/wildcard"
+	"github.com/bindoffice/bindstore/pkg/bucket/policy/condition"
+	"github.com/bindoffice/bindstore/pkg/wildcard"
 )
 
 // ResourceARNPrefix - resource ARN prefix as per AWS S3 specification.

@@ -17,7 +17,7 @@
 package cmd
 
 import (
-	"github.com/bindoffice/bind-store/pkg/auth"
+	"github.com/bindoffice/bindstore/pkg/auth"
 )
 
 // GatewayMinioSysTmp prefix is used in Azure/GCS gateway for save metadata sent by Initialize Multipart Upload API.

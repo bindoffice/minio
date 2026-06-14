@@ -19,8 +19,8 @@ package cmd
 import (
 	"testing"
 
-	"github.com/bindoffice/bind-store/cmd/config"
-	"github.com/bindoffice/bind-store/pkg/auth"
+	"github.com/bindoffice/bindstore/cmd/config"
+	"github.com/bindoffice/bindstore/pkg/auth"
 )
 
 func TestIsWildcardListenAddr(t *testing.T) {

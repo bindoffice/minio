@@ -16,7 +16,7 @@ package main
 import (
     "fmt"
 
-    "github.com/bindoffice/bind-store/pkg/madmin"
+    "github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 func main() {

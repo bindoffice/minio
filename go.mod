@@ -1,4 +1,4 @@
-module github.com/bindoffice/bind-store
+module github.com/bindoffice/bindstore
 
 go 1.25.11
 

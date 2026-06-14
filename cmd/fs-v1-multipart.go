@@ -30,9 +30,9 @@ import (
 	"time"
 
 	jsoniter "github.com/json-iterator/go"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	xioutil "github.com/bindoffice/bind-store/pkg/ioutil"
-	"github.com/bindoffice/bind-store/pkg/trie"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	xioutil "github.com/bindoffice/bindstore/pkg/ioutil"
+	"github.com/bindoffice/bindstore/pkg/trie"
 )
 
 // Returns EXPORT/.minio.sys/multipart/SHA256/UPLOADID

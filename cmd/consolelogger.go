@@ -21,11 +21,11 @@ import (
 	"context"
 	"sync"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
-	"github.com/bindoffice/bind-store/cmd/logger/message/log"
-	"github.com/bindoffice/bind-store/cmd/logger/target/console"
-	xnet "github.com/bindoffice/bind-store/pkg/net"
-	"github.com/bindoffice/bind-store/pkg/pubsub"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	"github.com/bindoffice/bindstore/cmd/logger/message/log"
+	"github.com/bindoffice/bindstore/cmd/logger/target/console"
+	xnet "github.com/bindoffice/bindstore/pkg/net"
+	"github.com/bindoffice/bindstore/pkg/pubsub"
 )
 
 // number of log messages to buffer

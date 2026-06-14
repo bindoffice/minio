@@ -22,7 +22,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 // Tests if we generate storage info.

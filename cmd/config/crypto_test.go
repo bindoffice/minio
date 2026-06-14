@@ -21,7 +21,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/bindoffice/bind-store/pkg/kms"
+	"github.com/bindoffice/bindstore/pkg/kms"
 )
 
 var encryptDecryptTests = []struct {

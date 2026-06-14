@@ -23,10 +23,10 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/bindoffice/bind-store/cmd/http"
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	"github.com/bindoffice/bind-store/cmd/rest"
-	"github.com/bindoffice/bind-store/pkg/dsync"
+	"github.com/bindoffice/bindstore/cmd/http"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	"github.com/bindoffice/bindstore/cmd/rest"
+	"github.com/bindoffice/bindstore/pkg/dsync"
 )
 
 // lockRESTClient is authenticable lock REST client

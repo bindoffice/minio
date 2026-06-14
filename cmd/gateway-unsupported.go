@@ -20,15 +20,15 @@ import (
 	"context"
 	"errors"
 
-	"github.com/bindoffice/bind-store/cmd/logger"
+	"github.com/bindoffice/bindstore/cmd/logger"
 
 	"github.com/minio/minio-go/v7/pkg/tags"
-	bucketsse "github.com/bindoffice/bind-store/pkg/bucket/encryption"
-	"github.com/bindoffice/bind-store/pkg/bucket/lifecycle"
-	"github.com/bindoffice/bind-store/pkg/bucket/policy"
-	"github.com/bindoffice/bind-store/pkg/bucket/versioning"
+	bucketsse "github.com/bindoffice/bindstore/pkg/bucket/encryption"
+	"github.com/bindoffice/bindstore/pkg/bucket/lifecycle"
+	"github.com/bindoffice/bindstore/pkg/bucket/policy"
+	"github.com/bindoffice/bindstore/pkg/bucket/versioning"
 
-	"github.com/bindoffice/bind-store/pkg/madmin"
+	"github.com/bindoffice/bindstore/pkg/madmin"
 )
 
 // GatewayUnsupported list of unsupported call stubs for gateway.

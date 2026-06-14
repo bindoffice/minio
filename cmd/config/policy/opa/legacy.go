@@ -17,7 +17,7 @@
 package opa
 
 import (
-	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bindstore/cmd/config"
 )
 
 // Legacy OPA envs

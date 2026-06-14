@@ -28,9 +28,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
-	"github.com/bindoffice/bind-store/cmd/logger"
-	xnet "github.com/bindoffice/bind-store/pkg/net"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
+	"github.com/bindoffice/bindstore/cmd/logger"
+	xnet "github.com/bindoffice/bindstore/pkg/net"
 )
 
 // DefaultTimeout - default REST timeout is 10 seconds.

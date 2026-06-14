@@ -16,7 +16,7 @@ Bucket lookup from DNS federation requires two dependencies
 
 ## Architecture
 
-![bucket-lookup](https://github.com/bindoffice/bind-store/blob/master/docs/federation/lookup/bucket-lookup.png?raw=true)
+![bucket-lookup](https://github.com/bindoffice/bindstore/blob/master/docs/federation/lookup/bucket-lookup.png?raw=true)
 
 ### Environment variables
 

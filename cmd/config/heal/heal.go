@@ -21,8 +21,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/bindoffice/bind-store/cmd/config"
-	"github.com/bindoffice/bind-store/pkg/env"
+	"github.com/bindoffice/bindstore/cmd/config"
+	"github.com/bindoffice/bindstore/pkg/env"
 )
 
 // Compression environment variables

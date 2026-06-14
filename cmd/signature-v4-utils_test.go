@@ -20,7 +20,7 @@ import (
 	"net/http"
 	"testing"
 
-	xhttp "github.com/bindoffice/bind-store/cmd/http"
+	xhttp "github.com/bindoffice/bindstore/cmd/http"
 )
 
 // TestSkipContentSha256Cksum - Test validate the logic which decides whether

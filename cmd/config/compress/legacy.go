@@ -19,7 +19,7 @@ package compress
 import (
 	"strings"
 
-	"github.com/bindoffice/bind-store/cmd/config"
+	"github.com/bindoffice/bindstore/cmd/config"
 )
 
 // Legacy envs.
